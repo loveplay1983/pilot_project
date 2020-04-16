@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="unreg_grpbox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>871</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>退号处理</string>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>70</y>
+       <width>301</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QDateEdit" name="unreg_date_start"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="unreg_date_to">
+        <property name="text">
+         <string>   至</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="unreg_date_end"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="unreg_search">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>40</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Devanagari</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="unreg_date_label">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>70</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Devanagari</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>日期</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="unreg_modification">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>40</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Devanagari</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>修改</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="unreg_input">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>30</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="unreg_id_label">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Devanagari</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>门诊号</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="unreg_table_view">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>831</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1013</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_db">
+    <property name="title">
+     <string>数据操作</string>
+    </property>
+    <widget class="QMenu" name="menu_db_registration">
+     <property name="title">
+      <string>收费</string>
+     </property>
+     <addaction name="menu_db_unreg"/>
+    </widget>
+    <addaction name="menu_db_registration"/>
+    <addaction name="separator"/>
+    <addaction name="menu_db_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_utilities">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <widget class="QMenu" name="menu_utilities_pharmacy">
+     <property name="title">
+      <string>西药房</string>
+     </property>
+     <addaction name="menu_utilities_pharmacy_swift_save"/>
+    </widget>
+    <addaction name="menu_utilities_pharmacy"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="menu_help_about"/>
+   </widget>
+   <addaction name="menu_db"/>
+   <addaction name="menu_utilities"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menu_db_unreg">
+   <property name="text">
+    <string>退号</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>---</string>
+   </property>
+  </action>
+  <action name="menu_db_quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="menu_utilities_pharmacy_swift_save">
+   <property name="text">
+    <string>快速保存</string>
+   </property>
+  </action>
+  <action name="menu_help_about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
