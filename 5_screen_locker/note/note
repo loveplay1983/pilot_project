@@ -1,0 +1,72 @@
+1. ##############################################
+https://www.cnblogs.com/wuyongqiang/p/9810173.html
+https://blog.csdn.net/mybigkid/article/details/78383898
+https://blog.csdn.net/qq_41597912/article/details/80022230
+https://www.cnblogs.com/wackysoft/p/8544365.html
+https://www.cnblogs.com/zhyj/p/5533657.html
+
+
+2. ##############################################
+https://blog.csdn.net/mi_bo/article/details/3219483
+
+
+3.  ##############################################
+https://ask.csdn.net/questions/1048856
+from pyHook import HookManager, GetKeyState, HookConstants
+import pythoncom
+def OnKeyboardEvent(event):
+    # 屏蔽组合ALT+TAB
+    if GetKeyState(HookConstants.VKeyToID('VK_MENU')) and event.KeyID == HookConstants.VKeyToID('VK_TAB'):
+        return False
+    # 返回True则不会屏蔽对应键
+    return True
+
+# 创建hook manager对象
+hm = HookManager()
+# 对键盘事件进行监控
+hm.KeyDown = OnKeyboardEvent
+# 设置hook
+hm.HookKeyboard()
+# 循环获取消息
+pythoncom.PumpMessages()
+
+
+4. ###############################
+http://code.activestate.com/recipes/553270-using-pyhook-to-block-windows-keys/
+import pyHook
+import pygame
+
+# create a keyboard hook
+def OnKeyboardEvent(event):
+	print 'MessageName:',event.MessageName
+	print 'Message:',event.Message
+	print 'Time:',event.Time
+	print 'Window:',event.Window
+	print 'WindowName:',event.WindowName
+	print 'Ascii:', event.Ascii, chr(event.Ascii)
+	print 'Key:', event.Key
+	print 'KeyID:', event.KeyID
+	print 'ScanCode:', event.ScanCode
+	print 'Extended:', event.Extended
+	print 'Injected:', event.Injected
+	print 'Alt', event.Alt
+	print 'Transition', event.Transition
+	print '---'
+	if event.Key.lower() in ['lwin', 'tab', 'lmenu']:
+		return False	# block these keys
+	else:
+		# return True to pass the event to other handlers
+		return True
+
+# create a hook manager
+hm = pyHook.HookManager()
+# watch for all keyboard events
+hm.KeyDown = OnKeyboardEvent
+# set the hook
+hm.HookKeyboard()
+
+# initialize pygame and start the game loop
+pygame.init()
+
+while(1):
+	pygame.event.pump()
