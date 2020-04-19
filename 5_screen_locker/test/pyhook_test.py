@@ -18,7 +18,6 @@ def on_keyboard_event(event):
         print('ctrl alt del')
     return True
 
-
 def main():
     hm = HookManager()
     hm.KeyDown = on_keyboard_event
