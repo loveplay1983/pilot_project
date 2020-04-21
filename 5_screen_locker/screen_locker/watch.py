@@ -1,20 +1,13 @@
-# import time
-# import win32api
-# for i in range(10):
-#    print(win32api.GetLastInputInfo())
-#    time.sleep
+from watch_lib import *
 
-
-import sys
-from ctypes import *
-
-if sys.platform == 'win32':
+if platform == 'win32':
 
     class LASTINPUTINFO(Structure):
         _fields_ = [
             ('cbSize', c_uint),
             ('dwTime', c_int),
         ]
+
 
     def get_idle_duration():
         lastInputInfo = LASTINPUTINFO()
@@ -29,13 +22,18 @@ else:
         return 0
 
 if __name__ == '__main__':
-    import time
+
+    global idle_time
 
     while True:
+        """
+        Wait for user interaction, if more than duration then trigger the subprocess call
+        total idle time should be the 'duration + sleep' 
+        """
         duration = get_idle_duration()
-        if duration >= 5.00:
-            print('User idle for %.2f seconds.' % duration)
-            print('Enter inactive mode')
+
+        if duration >= idle_time:
+            call([r'driver:\xxx\xxx\yyy.exe'])
         else:
-            print('Enter active mode')
-        time.sleep(1)
+            pass
+        sleep(10)
