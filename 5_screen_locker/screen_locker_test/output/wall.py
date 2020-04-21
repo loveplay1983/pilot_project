@@ -1,5 +1,5 @@
 from wall_lib import *
-
+# from win32gui import FindWindow, ShowWindow
 
 class Wall(QMainWindow):
 
@@ -17,8 +17,13 @@ class Wall(QMainWindow):
             return False
         if GetKeyState(HookConstants.VKeyToID('VK_CONTROL')) and e.KeyID == HookConstants.VKeyToID('VK_ESCAPE'):
             return False
-        if e.Key.lower() in ['lcontrol', 'lmenu', 'rcontrol', 'rmenu', 'delete', 'lwin', 'rwin']:
-            False
+        if GetKeyState(HookConstants.VKeyToID('VK_CONTROL')) and e.KeyID == HookConstants.VKeyToID('VK_MENU'):
+            print('got it')
+        if e.Key == 'Lwin':
+            return False
+
+        # print(e.Key, e.KeyID, e.ScanCode)
+
         return True
 
     def watch_key_mouse(self):
@@ -39,7 +44,7 @@ class Wall(QMainWindow):
 
         self.showFullScreen()
         self.disable_mgr()
-        self.disable_win_key()
+        # self.disable_win_key()
 
     ############### disable mgr (effective way of disabling CTRL - ALT - DELETE ) ###########
     global path
@@ -53,6 +58,24 @@ class Wall(QMainWindow):
         batch_path = join(path, 'taskmgr\enable_mgr.bat')
         call([batch_path])
 
+    ################  disable win key (win32gui) ###############################
+    # def disable_win_key(self):
+    #     win1 = FindWindow('Button', None)
+    #     win2 = FindWindow('Shell_TrayWnd', None)
+    #
+    #     ShowWindow(win1, 0)
+    #     ShowWindow(win2, 0)
+    #
+    # def enable_win_key(self):
+    #     win1 = FindWindow('Button', None)
+    #     win2 = FindWindow('Shell_TrayWnd', None)
+    #
+    #     ShowWindow(win1, 1)
+    #     ShowWindow(win2, 1)
+
+    ############ disable win_R (run dialog) #######################
+    # https://mos86.com/61823.html
+
     ############### main window event (pyqt event) ###########
     def closeEvent(self, e):
         e.ignore()
@@ -60,17 +83,12 @@ class Wall(QMainWindow):
     ################ user action(main win call back)  ##############################
     def user_action(self):
         self.enable_mgr()
+        # self.enable_win_key()
         QCoreApplication.instance().quit()
 
-    ################  disable win key (win32gui) ###############################
-    def disable_win_key(self):
-        from win32gui import FindWindow, ShowWindow
 
-        win1 = FindWindow('Button', None)
-        win2 = FindWindow('Shell_TrayWnd', None)
 
-        ShowWindow(win1, 1)
-        ShowWindow(win2, 1)
+
 
 
 if __name__ == '__main__':
