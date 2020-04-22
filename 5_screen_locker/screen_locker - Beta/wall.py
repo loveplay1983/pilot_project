@@ -37,12 +37,12 @@ class Wall(QMainWindow):
     def main_win(self):
 
         # set bg image
-        if False:
+        if True:
             self.image_label = QLabel()
             self.image_label.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
             self.setCentralWidget(self.image_label)
             self.image = QImage()
-            if self.image.load('image path'):
+            if self.image.load('./img/wall_.jpg'):
                 self.image_label.setPixmap(QPixmap.fromImage(self.image))
                 self.resize(self.image.width(), self.image.height())
 
@@ -53,16 +53,17 @@ class Wall(QMainWindow):
         btn_action.clicked.connect(self.user_action)
         btn_action.setStyleSheet('background-color: red')
         btn_action.resize(100, 50)
-        btn_action.move(900, 630)
+        btn_action.move(866, 566)
+        btn_action.setWindowFlags(Qt.WindowStaysOnTopHint)
 
         # set topic
         font = QFont()
-        font.setPointSize(70)
+        font.setPointSize(72)
         font.setBold(True)
         self.bg_label = QLabel('诸暨市人民医院计算机中心', self)
         self.bg_label.setFont(font)
-        self.bg_label.setStyleSheet('border: 2px solid black')
-        self.bg_label.setGeometry(230, 250, 1500, 300)
+        self.bg_label.setStyleSheet('border: 6px solid black')
+        self.bg_label.setGeometry(190, 230, 1520, 260)
 
 
         self.showFullScreen()
