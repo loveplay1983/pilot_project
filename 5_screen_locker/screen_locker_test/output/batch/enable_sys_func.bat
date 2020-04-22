@@ -21,5 +21,10 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\S
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t reg_dword /d 0 /F
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "PromptOnSecureDesktop" /t reg_dword /d 0 /F
 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\system" /v "DisableTaskMgr" /t reg_dword /d 0 /f >nul 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "NoLogoff" /t reg_dword /d 0 /f >nul 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\system" /v "DisableLockWorkstation" /t reg_dword /d 0 /f >nul 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\system" /v "DisableChangePassword" /t reg_dword /d 0 /f >nul 
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "HideFastUserSwitching" /t reg_dword /d 0 /f >nul 
 
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\system" /v "DisableTaskMgr" /t reg_dword /d 1 /f >nul 
+ 

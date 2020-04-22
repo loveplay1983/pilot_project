@@ -1,4 +1,6 @@
 from wall_lib import *
+
+
 # from win32gui import FindWindow, ShowWindow
 
 class Wall(QMainWindow):
@@ -12,17 +14,17 @@ class Wall(QMainWindow):
 
     def on_keyboard_event(self, e):
         if GetKeyState(HookConstants.VKeyToID('VK_MENU')) and e.KeyID == HookConstants.VKeyToID('VK_TAB'):
-            return False
+            return False  # disable alt - tab
         if GetKeyState(HookConstants.VKeyToID('VK_MENU')) and e.KeyID == HookConstants.VKeyToID('VK_ESCAPE'):
-            return False
+            return False  # disable alt - esc
         if GetKeyState(HookConstants.VKeyToID('VK_CONTROL')) and e.KeyID == HookConstants.VKeyToID('VK_ESCAPE'):
-            return False
-        if GetKeyState(HookConstants.VKeyToID('VK_CONTROL')) and e.KeyID == HookConstants.VKeyToID('VK_MENU'):
-            print('got it')
+            return False  # disable control - esc (start menu)
         if e.Key == 'Lwin':
-            return False
-
-        # print(e.Key, e.KeyID, e.ScanCode)
+            return False  # disable win key (start menu)
+        if GetKeyState(HookConstants.VKeyToID('VK_CONTROL')) and GetKeyState(HookConstants.VKeyToID('VK_LMENU')) \
+                and e.KeyID == HookConstants.VKeyToID('VK_DELETE'):
+            return False  # not working ( was going to disable tasmgr or CAD[control alt delete])
+        # print(e.Key, e.KeyID, e.ScanCode)  # display the content of the particular keystroke
 
         return True
 
@@ -43,52 +45,28 @@ class Wall(QMainWindow):
         btn_action.move(self.width(), self.height())
 
         self.showFullScreen()
-        self.disable_mgr()
-        # self.disable_win_key()
+        self.disable_sys_func()
 
-    ############### disable mgr (effective way of disabling CTRL - ALT - DELETE ) ###########
+    ############### call batch files  (disable some system functionality) ###########
     global path
     path = abspath(dirname(__file__))
 
-    def disable_mgr(self):
-        batch_path = join(path, 'taskmgr\disable_mgr.bat')
+    def disable_sys_func(self):
+        batch_path = join(path, 'batch\disable_sys_func.bat')
         call([batch_path])
 
-    def enable_mgr(self):
-        batch_path = join(path, 'taskmgr\enable_mgr.bat')
+    def enable_sys_func(self):
+        batch_path = join(path, 'batch\enable_sys_func.bat')
         call([batch_path])
 
-    ################  disable win key (win32gui) ###############################
-    # def disable_win_key(self):
-    #     win1 = FindWindow('Button', None)
-    #     win2 = FindWindow('Shell_TrayWnd', None)
-    #
-    #     ShowWindow(win1, 0)
-    #     ShowWindow(win2, 0)
-    #
-    # def enable_win_key(self):
-    #     win1 = FindWindow('Button', None)
-    #     win2 = FindWindow('Shell_TrayWnd', None)
-    #
-    #     ShowWindow(win1, 1)
-    #     ShowWindow(win2, 1)
-
-    ############ disable win_R (run dialog) #######################
-    # https://mos86.com/61823.html
-
-    ############### main window event (pyqt event) ###########
+    ############### main window event (pyqt event) ##################################
     def closeEvent(self, e):
         e.ignore()
 
     ################ user action(main win call back)  ##############################
     def user_action(self):
-        self.enable_mgr()
-        # self.enable_win_key()
+        self.enable_sys_func()
         QCoreApplication.instance().quit()
-
-
-
-
 
 
 if __name__ == '__main__':
