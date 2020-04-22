@@ -35,14 +35,35 @@ class Wall(QMainWindow):
 
     ############# main window (wall) ##########################
     def main_win(self):
+
+        # set bg image
+        if False:
+            self.image_label = QLabel()
+            self.image_label.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
+            self.setCentralWidget(self.image_label)
+            self.image = QImage()
+            if self.image.load('image path'):
+                self.image_label.setPixmap(QPixmap.fromImage(self.image))
+                self.resize(self.image.width(), self.image.height())
+
         self.setWindowFlags(Qt.WindowStaysOnTopHint)
         self.setWindowFlags(Qt.FramelessWindowHint)
 
-        btn_action = QPushButton('Quit', self)
+        btn_action = QPushButton('出口', self)
         btn_action.clicked.connect(self.user_action)
         btn_action.setStyleSheet('background-color: red')
         btn_action.resize(100, 50)
-        btn_action.move(self.width(), self.height())
+        btn_action.move(900, 630)
+
+        # set topic
+        font = QFont()
+        font.setPointSize(70)
+        font.setBold(True)
+        self.bg_label = QLabel('诸暨市人民医院计算机中心', self)
+        self.bg_label.setFont(font)
+        self.bg_label.setStyleSheet('border: 2px solid black')
+        self.bg_label.setGeometry(230, 250, 1500, 300)
+
 
         self.showFullScreen()
         self.disable_sys_func()
