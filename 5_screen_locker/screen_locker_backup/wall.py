@@ -36,18 +36,17 @@ class Wall(QMainWindow):
     ############# main window (wall) ##########################
     def main_win(self):
 
-        # set bg image
-        if True:
-            self.image_label = QLabel()
-            self.image_label.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
-            self.setCentralWidget(self.image_label)
-            self.image = QImage()
-            if self.image.load('./img/wall_.jpg'):
-                self.image_label.setPixmap(QPixmap.fromImage(self.image))
-                self.resize(self.image.width(), self.image.height())
-
         self.setWindowFlags(Qt.WindowStaysOnTopHint)
         self.setWindowFlags(Qt.FramelessWindowHint)
+
+        # set bg image
+        self.image_label = QLabel()
+        self.image_label.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        self.setCentralWidget(self.image_label)
+        self.image = QImage()
+        if self.image.load('./img/wall_.jpg'):
+            self.image_label.setPixmap(QPixmap.fromImage(self.image))
+            self.resize(self.image.width(), self.image.height())
 
         btn_action = QPushButton('出口', self)
         btn_action.clicked.connect(self.user_action)
@@ -64,7 +63,6 @@ class Wall(QMainWindow):
         self.bg_label.setFont(font)
         self.bg_label.setStyleSheet('border: 6px solid black')
         self.bg_label.setGeometry(190, 230, 1520, 260)
-
 
         self.showFullScreen()
         self.disable_sys_func()

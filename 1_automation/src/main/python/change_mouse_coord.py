@@ -28,7 +28,7 @@ class MouseInit(QDialog):
 
         self.setLayout(layout)
         self.setWindowTitle('鼠标起始位置设定')
-        self.resize(250, 100)
+        self.resize(100, 60)
 
     def change_x(self):
         return int(self.coord_x_input.text())

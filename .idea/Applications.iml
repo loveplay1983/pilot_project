@@ -6,6 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_test/output" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker - Beta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker/security/fixed_pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker - Beta/security/fixed_pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_backup" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_backup/security/fixed_pattern" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
