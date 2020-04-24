@@ -86,7 +86,8 @@ class Wall(QMainWindow):
     ################ user action(main win call back)  ##############################
     def user_action(self):
         self.enable_sys_func()
-        QCoreApplication.instance().quit()
+        # call first validation
+        InputPasswd.validation()
 
 
 if __name__ == '__main__':

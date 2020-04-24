@@ -48,10 +48,17 @@ class InputPasswd(QDialog):
         # determine whether the input passwd is correct or pattern matched
         if self.passwd_input.text() == 'zjrmyy' + strftime('%w') + strftime('%d'):
             # TO-DO Open second passwd input dialog
-            self.close()
+            QCoreApplication.instance().quit()
+
         else:
-            msgBox = QMessageBox(QMessageBox.NoIcon, '提示','您的输入有误，请重新输入')
+            msgBox = QMessageBox(QMessageBox.NoIcon, '提示', '您的输入有误，请重新输入')
             msgBox.exec_()
+
+    @staticmethod
+    def validation(parent=None):
+        dialog = InputPasswd()
+        result = dialog.exec_()
+        return result == QDialog.Accepted
 
 
 if __name__ == '__main__':
