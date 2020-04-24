@@ -32,8 +32,8 @@ if __name__ == '__main__':
         """
         duration = get_idle_duration()
 
-        if duration >= idle_time:
-            call([r'driver:\xxx\xxx\yyy.exe'])
+        if duration >= 5:
+            call([r'E:\Applications\5_screen_locker\screen_locker_beta\target\screen_locker\screen_locker.exe'])
         else:
             pass
         sleep(10)
