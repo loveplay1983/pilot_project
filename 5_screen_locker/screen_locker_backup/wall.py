@@ -13,6 +13,9 @@ class Wall(QMainWindow):
     ############# hook user action (key press and mouse click) ##########################
 
     def on_keyboard_event(self, e):
+
+        # print(e.Key, e.KeyID, e.ScanCode)  # display the content of the particular keystroke
+
         if GetKeyState(HookConstants.VKeyToID('VK_MENU')) and e.KeyID == HookConstants.VKeyToID('VK_TAB'):
             return False  # disable alt - tab
         if GetKeyState(HookConstants.VKeyToID('VK_MENU')) and e.KeyID == HookConstants.VKeyToID('VK_ESCAPE'):
@@ -21,11 +24,6 @@ class Wall(QMainWindow):
             return False  # disable control - esc (start menu)
         if e.Key == 'Lwin':
             return False  # disable win key (start menu)
-        if GetKeyState(HookConstants.VKeyToID('VK_CONTROL')) and GetKeyState(HookConstants.VKeyToID('VK_LMENU')) \
-                and e.KeyID == HookConstants.VKeyToID('VK_DELETE'):
-            return False  # not working ( was going to disable tasmgr or CAD[control alt delete])
-        # print(e.Key, e.KeyID, e.ScanCode)  # display the content of the particular keystroke
-
         return True
 
     def watch_key_mouse(self):

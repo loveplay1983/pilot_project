@@ -1,12 +1,28 @@
 from wall_lib import *
 
 
-# from win32gui import FindWindow, ShowWindow
+################### context class ########################
+class AppContext(ApplicationContext):
 
+    def run(self):
+        self.wall_app
+        return self.app.exec_()
+
+    @cached_property
+    def wall_app(self):
+        return Wall(self)
+
+    @cached_property
+    def wall_bg(self):
+        return self.get_resource(join('img', 'wall_.jpg'))
+
+
+############### main class ################################
 class Wall(QMainWindow):
 
-    def __init__(self, *args, **kw):
-        super(Wall, self).__init__(*args, **kw)
+    def __init__(self, ctx):
+        super(Wall, self).__init__()
+        self.ctx = ctx
         self.main_win()
         self.watch_key_mouse()
 
@@ -42,7 +58,7 @@ class Wall(QMainWindow):
         self.image_label.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
         self.setCentralWidget(self.image_label)
         self.image = QImage()
-        if self.image.load('./img/wall_.jpg'):
+        if self.image.load(self.ctx.wall_bg):
             self.image_label.setPixmap(QPixmap.fromImage(self.image))
             self.resize(self.image.width(), self.image.height())
 
@@ -89,6 +105,7 @@ class Wall(QMainWindow):
 
 
 if __name__ == '__main__':
-    app = QApplication(argv)
-    wall = Wall()
-    exit(app.exec_())
+    app_context = AppContext()
+    QApplication.setQuitOnLastWindowClosed(False)
+    exit_code = app_context.run()
+    exit(exit_code)

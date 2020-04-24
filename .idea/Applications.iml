@@ -11,6 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_backup" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_backup/security/fixed_pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker/validation/fixed_pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/fixed_pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
