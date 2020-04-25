@@ -1,0 +1,1 @@
+createobject("wscript.shell").run"disable_sys_func.bat",0

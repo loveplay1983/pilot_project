@@ -33,7 +33,10 @@ if __name__ == '__main__':
         duration = get_idle_duration()
 
         if duration >= 5:
-            call([r'E:\Applications\5_screen_locker\screen_locker_beta\target\screen_locker\screen_locker.exe'])
+            exe_path = r'C:\screen_locker'
+            chdir(exe_path)
+            run([exe_path+'\screen_locker.exe'])
+            # print(exe_path+'\screen_locker.exe')
         else:
             pass
         sleep(10)
