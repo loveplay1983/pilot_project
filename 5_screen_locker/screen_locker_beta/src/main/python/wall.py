@@ -23,8 +23,8 @@ class Wall(QMainWindow):
     def __init__(self, ctx):
         super(Wall, self).__init__()
         self.ctx = ctx
-        self.main_win()
         self.watch_key_mouse()
+        self.main_win()
 
     ############# hook user action (key press and mouse click) ##########################
 
@@ -46,11 +46,13 @@ class Wall(QMainWindow):
         hook_manager = HookManager()
         hook_manager.KeyDown = self.on_keyboard_event
         hook_manager.HookKeyboard()
+        self.disable_sys_func()
 
     ############# main window (wall) ##########################
     def main_win(self):
 
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
+        # set top window
+        # self.setWindowFlags(Qt.WindowStaysOnTopHint)
         self.setWindowFlags(Qt.FramelessWindowHint)
 
         # set bg image
@@ -78,8 +80,9 @@ class Wall(QMainWindow):
         self.bg_label.setStyleSheet('border: 6px solid black')
         self.bg_label.setGeometry(190, 230, 1520, 260)
 
+        # show window
         self.showFullScreen()
-        self.disable_sys_func()
+        # self.set_top_level_window()
 
     ############### call batch files  (disable some system functionality) ###########
     global path
@@ -104,6 +107,23 @@ class Wall(QMainWindow):
         if ok:
             self.enable_sys_func()
             QCoreApplication.instance().quit()
+
+    ################ check windows status ##############################
+    def set_top_level_window(self):
+        if self.windowState() != Qt.WindowMaximized:
+            self.showMaximized()
+            self.showNormal()
+
+        else:
+            self.showNormal()
+            self.showMaximized()
+
+        self.raise_()
+        self.activateWindow()
+
+        # hwnd = win32gui.GetForegroundWindow()
+        # win32gui.SetWindowPos(hWnd, win32con.HWND_TOPMOST, 0, 0, 0, 0,
+        #                       win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
 
 
 if __name__ == '__main__':
