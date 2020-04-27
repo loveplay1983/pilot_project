@@ -11,14 +11,16 @@ from subprocess import run
 class InputPasswd(QDialog):
     """ password dialog with fixed pattern and the symbolic day of month+week """
 
-    def __init__(self):
-        super(InputPasswd, self).__init__()
+    def __init__(self, *args, **kwargs):
+        super(InputPasswd, self).__init__(*args, **kwargs)
+
         buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel,
                                    Qt.Horizontal, self)
         buttons.accepted.connect(self.accept)
         buttons.rejected.connect(self.reject)
 
         layout = QFormLayout()
+
         self.label_input = QLabel('请输入密码')
         self.passwd_input = QLineEdit()
         self.passwd_input.setContextMenuPolicy(Qt.NoContextMenu)
@@ -26,6 +28,8 @@ class InputPasswd(QDialog):
         self.passwd_input.editingFinished.connect(self.passwd_entered)
         self.passwd_input.setPlaceholderText('固定组合+约定信号')
         self.passwd_input.installEventFilter(self)  # relates this line to def eventFilter(...)
+        self.passwd_input.setFocus()
+
         layout.addRow(self.label_input, self.passwd_input)
         layout.addWidget(buttons)
 
@@ -52,11 +56,13 @@ class InputPasswd(QDialog):
     @staticmethod
     def validation(parent=None):
         dialog = InputPasswd()
+        dialog.passwd_input.setFocus()
         result = dialog.exec_()
         if dialog.passwd_input.text() == 'zjrmyy' + strftime('%w') + strftime('%d'):
             return result == QDialog.Accepted
         else:
             msgBox = QMessageBox(QMessageBox.NoIcon, '提示', '您的输入有误，请重新输入')
+            dialog.passwd_input.clear()
             msgBox.exec_()
 
 

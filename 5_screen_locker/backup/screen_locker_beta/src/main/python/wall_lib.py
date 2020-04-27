@@ -6,6 +6,9 @@ from PyHook3 import HookManager, GetKeyState, HookConstants
 from os.path import abspath, join, dirname
 from sys import argv, exit
 from subprocess import run
+import win32gui
+import win32con
 from validation.fixed_pattern.passwd_dialog import InputPasswd
+# fbs libs
 from fbs_runtime.application_context.PyQt5 import ApplicationContext, cached_property
 

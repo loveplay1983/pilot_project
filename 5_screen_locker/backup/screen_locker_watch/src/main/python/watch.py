@@ -1,4 +1,10 @@
-from watch_lib import *
+# from watch_lib import *
+from sys import platform
+from time import sleep
+from subprocess import run
+from ctypes import (Structure, c_uint, c_int, sizeof, windll, byref)
+from os import chdir, getcwd
+# from fbs_runtime.application_context.PyQt5 import ApplicationContext, cached_property
 
 if platform == 'win32':
 
@@ -23,7 +29,8 @@ else:
 
 if __name__ == '__main__':
 
-    global idle_time
+    chdir('c:\screen_locker')
+    print(getcwd())
 
     while True:
         """
@@ -33,7 +40,7 @@ if __name__ == '__main__':
         duration = get_idle_duration()
 
         if duration >= 5:
-            call([r'E:\Applications\5_screen_locker\screen_locker_beta\target\screen_locker\screen_locker.exe'])
+            run([r'screen_locker.exe'])
         else:
             pass
         sleep(10)

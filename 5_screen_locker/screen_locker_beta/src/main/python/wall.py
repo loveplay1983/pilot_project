@@ -108,6 +108,8 @@ class Wall(QMainWindow):
             self.enable_sys_func()
             QCoreApplication.instance().quit()
 
+            # TO-DO call second validation
+
     ################ check windows status ##############################
     def set_top_level_window(self):
         if self.windowState() != Qt.WindowMaximized:
