@@ -17,6 +17,10 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_watch/src/main/python" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_combo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_combo/validation/fixed_pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/dysms_python/dysms_python" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/dysms_python(old)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/aliyun-python-sdk-dysmsapi/aliyunsdkdysmsapi" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -73,5 +73,7 @@ _This program is consist of two parts_
 
 * `ctypes` calls windows `dlls` in order to keep watching user idle time
 
-* _TO-DO_   `second validation` 
+* _TO-DO_   
 
+  * `second validation` 
+  * `watermark`

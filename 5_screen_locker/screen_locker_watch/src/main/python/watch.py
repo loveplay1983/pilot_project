@@ -4,6 +4,7 @@ from time import sleep
 from subprocess import run
 from ctypes import (Structure, c_uint, c_int, sizeof, windll, byref)
 from os import chdir, getcwd
+
 # from fbs_runtime.application_context.PyQt5 import ApplicationContext, cached_property
 
 if platform == 'win32':
@@ -13,7 +14,7 @@ if platform == 'win32':
             ('cbSize', c_uint),
             ('dwTime', c_int),
         ]
-
+    
 
     def get_idle_duration():
         lastInputInfo = LASTINPUTINFO()

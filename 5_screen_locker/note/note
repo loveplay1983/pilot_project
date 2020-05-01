@@ -70,3 +70,15 @@ pygame.init()
 
 while(1):
 	pygame.event.pump()
+
+
+
+
+
+-----
+TO-DO
+
+1. add timer as well as hide window at the beginning time
+2. use timer to track the user idel time, show window
+3. call timer again after the dialog ends, and hide window
+so the while true loop can be removed
