@@ -1,11 +1,4 @@
-from PyQt5.QtWidgets import (QApplication, QPushButton, QLabel, QWidget, QMessageBox,
-                             QFormLayout, QLineEdit, QDialog, QDialogButtonBox)
-from PyQt5.QtCore import Qt, QEvent
-from PyQt5.QtGui import QKeyEvent, QKeySequence
-from sys import argv, exit
-from time import strftime
-from os.path import join, abspath, dirname
-from subprocess import run
+from dialog_lib import *
 
 
 class InputPasswd(QDialog):
@@ -25,10 +18,9 @@ class InputPasswd(QDialog):
         self.passwd_input = QLineEdit()
         self.passwd_input.setContextMenuPolicy(Qt.NoContextMenu)
         self.passwd_input.setEchoMode(QLineEdit.Password)
-        self.passwd_input.editingFinished.connect(self.passwd_entered)
+        # self.passwd_input.editingFinished.connect(self.passwd_entered)
         self.passwd_input.setPlaceholderText('固定组合+约定信号')
         self.passwd_input.installEventFilter(self)  # relates this line to def eventFilter(...)
-        self.passwd_input.setFocus()
 
         layout.addRow(self.label_input, self.passwd_input)
         layout.addWidget(buttons)
@@ -49,9 +41,9 @@ class InputPasswd(QDialog):
                     return True  # filter out keyboard selection, copy, paste, etc..
         return QDialog.eventFilter(self, object, event)
 
-    def passwd_entered(self):
-        """ on passwd input is finished """
-        pass
+    # def passwd_entered(self):
+    #     """ on passwd input is finished """
+    #     pass
 
     @staticmethod
     def validation(parent=None):
