@@ -79,6 +79,6 @@ while(1):
 TO-DO
 
 1. add timer as well as hide window at the beginning time
-2. use timer to track the user idel time, show window
+2. use timer to track the user idel time, show window， when idle time is up, the timer-callback function will be called
 3. call timer again after the dialog ends, and hide window
 so the while true loop can be removed

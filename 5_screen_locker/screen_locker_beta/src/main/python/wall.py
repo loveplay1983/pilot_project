@@ -105,8 +105,10 @@ class Wall(QMainWindow):
         # call first validation
         ok = InputPasswd.validation()
         if ok:
-            self.enable_sys_func()
-            QCoreApplication.instance().quit()
+            valid_ok = ValidDialog.validation()
+            if valid_ok:
+                self.enable_sys_func()
+                QCoreApplication.instance().quit()
 
             # TO-DO call second validation
 

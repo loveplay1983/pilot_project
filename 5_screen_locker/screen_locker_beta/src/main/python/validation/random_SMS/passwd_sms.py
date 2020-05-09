@@ -27,7 +27,25 @@ class SendSMS:
         client = AcsClient(self.access_param['access_key'], self.access_param['access_secret'], self.access_param['region_id'])
         return client
 
-    def request_send_sms(self, phone_num, template_param):
+    @staticmethod
+    def gen_valid_code():
+        """
+        from md5_gen_valid import xxx
+        generate validation code in md5 uuid
+        save the code to local JSON file
+
+        use the code as the template param to send sms
+        """
+        pass_path = r'C:\screen_locker\rand_pass\unlock.json'
+        md5_code = GenMd5()
+        rand_pass = md5_code.random_pass()
+        get_uuid = md5_code.gen_md5(rand_pass)
+        unlock_pass = md5_code.gen_random_choice(get_uuid, 6)
+        # save md5 code to local json file
+        return md5_code.save_to_json(pass_path, unlock_pass)
+
+    def request_send_sms(self, phone_num=None):
+        template_para = str(SendSMS.gen_valid_code())
         request = CommonRequest()
         request.set_accept_format(self.request_param['accept_format'])
         request.set_domain(self.request_param['domain'])
@@ -38,22 +56,13 @@ class SendSMS:
         request.add_query_param('RegionId', self.request_param['region_id'])
         request.add_query_param('SignName', self.request_param['sign_name'])
         request.add_query_param('PhoneNumbers', phone_num)
-        request.add_query_param('TemplateParam', template_param)
+        request.add_query_param('TemplateCode', self.request_param['template_code'])
+        request.add_query_param('TemplateParam', template_para)
         response = str(self.access().do_action_with_exception(request), encoding='utf-8')
         print(response)
-        return response
-
-    def gen_valid_code(self):
-        """
-        from md5_gen_valid import xxx
-        generate validation code in md5 uuid
-        save the code to local JSON file
-
-        use the code as the template param to send sms
-        """
-        pass
+        print(type(template_para), template_para)
 
 
 if __name__ == '__main__':
     send = SendSMS()
-    send.sms()
+    print(send.request_send_sms())

@@ -6,7 +6,7 @@ from sys import argv, exit
 from time import strftime
 # from os.path import join, abspath, dirname
 # from subprocess import run
-from validation import validation
+# from validation import validation
 
 
 

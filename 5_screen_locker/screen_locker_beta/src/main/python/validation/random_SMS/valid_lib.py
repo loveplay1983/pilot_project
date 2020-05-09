@@ -6,4 +6,5 @@ from sys import argv, exit
 from time import strftime
 # send sms
 from passwd_sms import SendSMS
-from validation import validation
+from json import load
+# from validation import validation
