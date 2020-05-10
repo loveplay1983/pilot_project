@@ -80,9 +80,7 @@ class Wall(QMainWindow):
         self.bg_label.setStyleSheet('border: 6px solid black')
         self.bg_label.setGeometry(190, 230, 1520, 260)
 
-        # show window
         self.showFullScreen()
-        # self.set_top_level_window()
 
     ############### call batch files  (disable some system functionality) ###########
     global path
@@ -103,13 +101,12 @@ class Wall(QMainWindow):
     ################ user action(main win call back)  ##############################
     def user_action(self):
         # call first validation
-        ok = InputPasswd.validation()
-        if ok:
-            valid_ok = ValidDialog.validation()
-            if valid_ok:
+        pass_ok = InputPasswd.validation()
+        if pass_ok:
+            ok = ValidDialog.validation()
+            if ok:
                 self.enable_sys_func()
                 QCoreApplication.instance().quit()
-
             # TO-DO call second validation
 
     ################ check windows status ##############################
@@ -124,10 +121,6 @@ class Wall(QMainWindow):
 
         self.raise_()
         self.activateWindow()
-
-        # hwnd = win32gui.GetForegroundWindow()
-        # win32gui.SetWindowPos(hWnd, win32con.HWND_TOPMOST, 0, 0, 0, 0,
-        #                       win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
 
 
 if __name__ == '__main__':

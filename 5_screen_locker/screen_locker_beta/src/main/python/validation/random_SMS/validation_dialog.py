@@ -21,9 +21,7 @@ class ValidDialog(QDialog):
         self.label_input = QLabel('验证码手机号')
         self.edit_input = QLineEdit()
         self.edit_input.setContextMenuPolicy(Qt.NoContextMenu)
-        self.edit_input.setEchoMode(QLineEdit.Password)
         self.edit_input.setPlaceholderText('189********')
-        self.edit_input.installEventFilter(self)
         self.button_sms = QPushButton('发送')
         self.button_sms.clicked.connect(self.send_sms)
 
@@ -33,7 +31,7 @@ class ValidDialog(QDialog):
         self.edit_valid.setContextMenuPolicy(Qt.NoContextMenu)
         self.edit_valid.setEchoMode(QLineEdit.Password)
         self.edit_valid.setPlaceholderText('请输入您收到的短信验证码')
-        self.edit_valid.installEventFilter(self)
+        # self.edit_valid.installEventFilter(self)
 
         layout.addRow(self.label_input, self.edit_input)
         layout.addWidget(self.button_sms)
@@ -47,7 +45,7 @@ class ValidDialog(QDialog):
     def eventFilter(self, object, event):
         """ passswd filter with regard to lineedit"""
 
-        if object == (self.edit_input or self.edit_valid):
+        if object == (self.edit_valid):
             if event.type() == QEvent.MouseMove or event.type == QEvent.MouseButtonDblClick:
                 return True  # filter out mouse selection
             elif event.type == QEvent.KeyPress:
@@ -81,18 +79,19 @@ class ValidDialog(QDialog):
         # read json file and get the valid code
         pass_path = r'C:\screen_locker\rand_pass\unlock.json'
         code = load(open(pass_path, 'r'))
-        return code['rand_pass']
+        return code['code']
 
     @staticmethod
     def validation(parent=None):
-        dialog = ValidDialog()
-        dialog.edit_valid.setFocus()  # setFocus can only be set once the dialog is displayed
-        result = dialog.exec_()
-        if dialog.edit_valid.text() == dialog.read_code():
-            return result == QDialog.Accepted
+        valid = ValidDialog()
+        valid.edit_valid.setFocus()  # setFocus can only be set once the dialog is displayed
+        valid.exec_()
+        if valid.edit_valid.text() == valid.read_code():
+            print('code matched')
+            return True
         else:
             msgBox = QMessageBox(QMessageBox.NoIcon, '提示', '您的验证码有误，请检查后重新输入')
-            dialog.edit_valid.clear()
+            valid.edit_valid.clear()
             msgBox.exec_()
 
 
