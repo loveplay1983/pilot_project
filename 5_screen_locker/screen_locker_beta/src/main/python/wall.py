@@ -125,6 +125,6 @@ class Wall(QMainWindow):
 
 if __name__ == '__main__':
     app_context = AppContext()
-    QApplication.setQuitOnLastWindowClosed(False)
+    # QApplication.setQuitOnLastWindowClosed(False)
     exit_code = app_context.run()
     exit(exit_code)

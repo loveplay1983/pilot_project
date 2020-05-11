@@ -21,6 +21,7 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/dysms_python(old)" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/aliyun-python-sdk-dysmsapi/aliyunsdkdysmsapi" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/event_test/default_event" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
