@@ -11,7 +11,6 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_backup" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_backup/security/fixed_pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker/validation/fixed_pattern" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/fixed_pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/backup/src/main/python" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_watch/src/main/python" isTestSource="false" />
@@ -20,8 +19,12 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/dysms_python/dysms_python" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/dysms_python(old)" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/aliyun-python-sdk-dysmsapi/aliyunsdkdysmsapi" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/pyqt/event_test/default_event" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/md5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS/passwd_sms" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/valid" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/valid/fixed_pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/valid/random_SMS" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

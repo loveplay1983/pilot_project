@@ -82,3 +82,8 @@ TO-DO
 2. use timer to track the user idel time, show window， when idle time is up, the timer-callback function will be called
 3. call timer again after the dialog ends, and hide window
 so the while true loop can be removed
+
+
+---
+fatal error detected
+https://www.youtube.com/watch?v=8pNwpy5bnBU

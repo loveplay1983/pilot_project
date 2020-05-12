@@ -1,7 +1,5 @@
 # sending sms
 
-from sms_lib import *
-
 
 class SendSMS:
     """ Send SMS to the specified phone number based on Aliyun cloud service """

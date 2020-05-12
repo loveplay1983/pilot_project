@@ -1,0 +1,2 @@
+Done. You can now run `target\screen_locker\screen_locker.exe`. If
+that doesn't work, see https://build-system.fman.io/troubleshooting.
