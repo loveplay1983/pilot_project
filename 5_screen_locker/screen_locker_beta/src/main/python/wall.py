@@ -1,3 +1,9 @@
+#############################################################
+# TO-DO
+# Add QTimer for lock and watch combination
+# Try to kill task-mgr every single second
+###########################################################
+
 from wall_lib import *
 
 
