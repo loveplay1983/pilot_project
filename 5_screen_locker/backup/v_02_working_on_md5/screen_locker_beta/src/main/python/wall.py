@@ -7,8 +7,8 @@ from PyHook3 import HookManager, GetKeyState, HookConstants
 from os.path import abspath, join, dirname
 from sys import exit
 from subprocess import run
-from valid.fixed_pattern.passwd_dialog import InputPasswd
-from valid.random_SMS.validation_dialog import ValidDialog
+from passwd_dialog import InputPasswd
+from validation_dialog import ValidDialog
 # fbs libs
 from fbs_runtime.application_context.PyQt5 import ApplicationContext, cached_property
 

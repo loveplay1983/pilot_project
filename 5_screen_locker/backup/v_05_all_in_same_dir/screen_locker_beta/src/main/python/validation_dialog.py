@@ -1,13 +1,11 @@
-from PyQt5.QtWidgets import (QApplication, QPushButton, QLabel, QWidget, QMessageBox,
+from PyQt5.QtWidgets import (QApplication, QPushButton, QLabel, QMessageBox,
                              QFormLayout, QLineEdit, QDialog, QDialogButtonBox)
 from PyQt5.QtCore import Qt, QEvent
 from PyQt5.QtGui import QKeyEvent, QKeySequence
 from sys import argv, exit
-from . import passwd_sms
+import passwd_sms
 from json import load
-from os.path import dirname, join
-
-
+from os.path import abspath, dirname, join
 
 class ValidDialog(QDialog):
     """
@@ -75,6 +73,9 @@ class ValidDialog(QDialog):
         print(type(send))
         send.request_send_sms(phone_num=self.edit_input.text())
 
+    global path
+    path = abspath(dirname(__file__))
+
     @staticmethod
     def read_code():
         """
@@ -85,9 +86,9 @@ class ValidDialog(QDialog):
         else:....
         """
         # read json file and get the valid code
-        f_path = dirname(__file__)
-        pass_path = join(f_path, '../../rand_pass/unlock.json')
+        pass_path = join(path, 'unlock.json')
         code = load(open(pass_path, 'r'))
+        print(pass_path)
         return code['code']
 
     @staticmethod

@@ -1,7 +1,4 @@
-from aliyunsdkcore.client import AcsClient
-from aliyunsdkcore.request import CommonRequest
-from . import md5_gen_valid
-from os.path import dirname, join
+from . passwd_lib import *
 
 
 class SendSMS:
@@ -37,9 +34,8 @@ class SendSMS:
 
         use the code as the template param to send sms
         """
-        file_path = dirname(__file__)
-        pass_path = join(file_path, '../../rand_pass/unlock.json')
-        md5_code = md5_gen_valid.GenMd5()
+        pass_path = r'C:\screen_locker\rand_pass\unlock.json'
+        md5_code = GenMd5()
         rand_pass = md5_code.random_pass()
         get_uuid = md5_code.gen_md5(rand_pass)
         unlock_pass = md5_code.gen_random_choice(get_uuid, 6)

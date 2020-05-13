@@ -1,18 +1,4 @@
-# from wall_lib import *
-# wall.py
-from PyQt5.QtWidgets import (QMainWindow, QPushButton, QLabel, QSizePolicy)
-from PyQt5.QtCore import Qt, QCoreApplication
-from PyQt5.QtGui import QImage, QPixmap, QFont
-from PyHook3 import HookManager, GetKeyState, HookConstants
-from os.path import abspath, join, dirname
-from sys import exit
-from subprocess import run
-
-from valid.fixed_pattern.passwd_dialog import InputPasswd
-from valid.random_SMS.validation_dialog import ValidDialog
-
-# fbs libs
-from fbs_runtime.application_context.PyQt5 import ApplicationContext, cached_property
+from wall_lib import *
 
 
 ################### context class ########################
@@ -94,20 +80,20 @@ class Wall(QMainWindow):
         self.bg_label.setStyleSheet('border: 6px solid black')
         self.bg_label.setGeometry(190, 230, 1520, 260)
 
+        # show window
         self.showFullScreen()
+        # self.set_top_level_window()
 
     ############### call batch files  (disable some system functionality) ###########
     global path
     path = abspath(dirname(__file__))
 
     def disable_sys_func(self):
-        # batch_path = join(path, 'batch\disable_sys_func.bat')
-        batch_path = 'batch\disable_sys_func.bat'
+        batch_path = join(path, 'batch\disable_sys_func.bat')
         run([batch_path])
 
     def enable_sys_func(self):
-        # batch_path = join(path, 'batch\enable_sys_func.bat')
-        batch_path = 'batch\enable_sys_func.bat'
+        batch_path = join(path, 'batch\enable_sys_func.bat')
         run([batch_path])
 
     ############### main window event (pyqt event) ##################################
@@ -123,7 +109,6 @@ class Wall(QMainWindow):
             if ok:
                 self.enable_sys_func()
                 QCoreApplication.instance().quit()
-            # TO-DO call second validation
 
     ################ check windows status ##############################
     def set_top_level_window(self):
@@ -138,8 +123,13 @@ class Wall(QMainWindow):
         self.raise_()
         self.activateWindow()
 
+        # hwnd = win32gui.GetForegroundWindow()
+        # win32gui.SetWindowPos(hWnd, win32con.HWND_TOPMOST, 0, 0, 0, 0,
+        #                       win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
+
 
 if __name__ == '__main__':
     app_context = AppContext()
+    QApplication.setQuitOnLastWindowClosed(False)
     exit_code = app_context.run()
     exit(exit_code)

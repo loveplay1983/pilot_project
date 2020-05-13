@@ -1,0 +1,695 @@
+(work) E:\Applications\5_screen_locker\screen_locker_beta>fbs freeze --debug
+87 INFO: PyInstaller: 3.4
+88 INFO: Python: 3.6.7
+88 INFO: Platform: Windows-10-10.0.18362-SP0
+89 INFO: wrote E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker.spec
+90 DEBUG: Testing for UPX ...
+91 INFO: UPX is not available.
+93 DEBUG: script: E:\Applications\5_screen_locker\screen_locker_beta\src\main\python\wall.py
+93 INFO: Extending PYTHONPATH with paths
+['E:\\Applications\\5_screen_locker\\screen_locker_beta\\src\\main\\python',
+ 'E:\\Applications\\5_screen_locker\\screen_locker_beta\\target\\PyInstaller']
+94 INFO: checking Analysis
+98 INFO: Building because E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\fbs_pyinstaller_hook.py changed
+98 INFO: Initializing module dependency graph...
+102 INFO: Initializing module graph hooks...
+104 INFO: Analyzing base_library.zip ...
+104 DEBUG: Collecting submodules for encodings
+220 DEBUG: collect_submodules - Found submodules: {'encodings.cp1254', 'encodings.idna', 'encodings.cp861', 'encodings.iso2022_kr', 'encodings.utf_16_le', 'encodings', 'encodings.cp855
+', 'encodings.rot_13', 'encodings.iso8859_15', 'encodings.gb2312', 'encodings.cp1125', 'encodings.gb18030', 'encodings.cp949', 'encodings.uu_codec', 'encodings.mbcs', 'encodings.cp1250
+', 'encodings.euc_jisx0213', 'encodings.mac_latin2', 'encodings.cp737', 'encodings.ascii', 'encodings.cp852', 'encodings.iso8859_6', 'encodings.iso8859_11', 'encodings.euc_jis_2004', '
+encodings.shift_jisx0213', 'encodings.hp_roman8', 'encodings.koi8_u', 'encodings.iso8859_16', 'encodings.cp1252', 'encodings.iso8859_4', 'encodings.koi8_t', 'encodings.utf_32_le', 'enc
+odings.cp1255', 'encodings.koi8_r', 'encodings.cp856', 'encodings.cp037', 'encodings.cp932', 'encodings.euc_jp', 'encodings.cp273', 'encodings.mac_arabic', 'encodings.mac_romanian', 'e
+ncodings.cp65001', 'encodings.cp862', 'encodings.mac_farsi', 'encodings.iso2022_jp_1', 'encodings.cp875', 'encodings.quopri_codec', 'encodings.big5hkscs', 'encodings.iso8859_1', 'encod
+ings.cp869', 'encodings.unicode_escape', 'encodings.cp1251', 'encodings.cp775', 'encodings.iso8859_13', 'encodings.utf_7', 'encodings.cp1257', 'encodings.aliases', 'encodings.iso8859_3
+', 'encodings.cp865', 'encodings.cp424', 'encodings.cp1006', 'encodings.base64_codec', 'encodings.cp500', 'encodings.utf_16_be', 'encodings.iso8859_9', 'encodings.iso2022_jp_2', 'encod
+ings.undefined', 'encodings.punycode', 'encodings.iso8859_5', 'encodings.iso8859_10', 'encodings.iso8859_2', 'encodings.tis_620', 'encodings.mac_centeuro', 'encodings.cp1026', 'encodin
+gs.iso2022_jp_ext', 'encodings.big5', 'encodings.cp1258', 'encodings.cp850', 'encodings.johab', 'encodings.mac_turkish', 'encodings.palmos', 'encodings.mac_cyrillic', 'encodings.hex_co
+dec', 'encodings.oem', 'encodings.ptcp154', 'encodings.cp1256', 'encodings.cp720', 'encodings.iso8859_8', 'encodings.cp866', 'encodings.cp863', 'encodings.cp874', 'encodings.kz1048', '
+encodings.cp1140', 'encodings.cp860', 'encodings.iso8859_14', 'encodings.hz', 'encodings.mac_greek', 'encodings.charmap', 'encodings.cp1253', 'encodings.euc_kr', 'encodings.cp858', 'en
+codings.cp950', 'encodings.cp864', 'encodings.utf_8_sig', 'encodings.bz2_codec', 'encodings.iso2022_jp_2004', 'encodings.latin_1', 'encodings.iso2022_jp', 'encodings.zlib_codec', 'enco
+dings.utf_16', 'encodings.cp437', 'encodings.utf_32', 'encodings.shift_jis', 'encodings.mac_croatian', 'encodings.unicode_internal', 'encodings.iso8859_7', 'encodings.shift_jis_2004',
+'encodings.utf_8', 'encodings.gbk', 'encodings.iso2022_jp_3', 'encodings.utf_32_be', 'encodings.mac_iceland', 'encodings.cp857', 'encodings.raw_unicode_escape', 'encodings.mac_roman'}
+220 DEBUG: Collecting submodules for collections
+331 DEBUG: collect_submodules - Found submodules: {'collections.abc', 'collections'}
+3144 DEBUG: Adding python files to base_library.zip
+3187 DEBUG: Hidden import: codecs
+3188 DEBUG: Hidden import 'codecs' already found
+3188 INFO: running Analysis Analysis-00.toc
+3188 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\python.exe
+3191 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\python.exe:
+3192 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+3192 INFO: Adding Microsoft.Windows.Common-Controls to dependent assemblies of final executable
+  required by c:\users\administrator\.conda\envs\work\python.exe
+3194 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+3202 DEBUG: Adding VCRUNTIME140.dll dependency of python.exe from c:\users\administrator\.conda\envs\work\VCRUNTIME140.dll
+3204 DEBUG: Adding api-ms-win-crt-stdio-l1-1-0.dll dependency of python.exe from c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll
+3208 DEBUG: Skipping KERNEL32.dll dependency of python.exe
+3210 DEBUG: Adding api-ms-win-crt-heap-l1-1-0.dll dependency of python.exe from c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll
+3213 DEBUG: Adding python36.dll dependency of python.exe from c:\users\administrator\.conda\envs\work\python36.dll
+3214 DEBUG: Adding api-ms-win-crt-math-l1-1-0.dll dependency of python.exe from c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll
+3215 DEBUG: Adding api-ms-win-crt-runtime-l1-1-0.dll dependency of python.exe from c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll
+3217 DEBUG: Adding api-ms-win-crt-locale-l1-1-0.dll dependency of python.exe from c:\users\administrator\.conda\envs\work\api-ms-win-crt-locale-l1-1-0.dll
+3219 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\VCRUNTIME140.dll
+3227 DEBUG: Skipping KERNEL32.dll dependency of VCRUNTIME140.dll
+3230 DEBUG: Adding api-ms-win-crt-string-l1-1-0.dll dependency of VCRUNTIME140.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll
+3233 DEBUG: Adding api-ms-win-crt-convert-l1-1-0.dll dependency of VCRUNTIME140.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll
+3234 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll
+3244 DEBUG: Adding ucrtbase.dll dependency of api-ms-win-crt-stdio-l1-1-0.dll from c:\users\administrator\.conda\envs\work\ucrtbase.dll
+3245 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll
+3250 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\python36.dll
+3251 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\python36.dll:
+3252 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+3252 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+3275 DEBUG: Adding api-ms-win-crt-environment-l1-1-0.dll dependency of python36.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll
+3277 DEBUG: Adding api-ms-win-crt-process-l1-1-0.dll dependency of python36.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-process-l1-1-0.dll
+3279 DEBUG: Adding api-ms-win-crt-time-l1-1-0.dll dependency of python36.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll
+3282 DEBUG: Skipping KERNEL32.dll dependency of python36.dll
+3283 DEBUG: Adding api-ms-win-crt-conio-l1-1-0.dll dependency of python36.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-conio-l1-1-0.dll
+3285 DEBUG: Adding api-ms-win-crt-filesystem-l1-1-0.dll dependency of python36.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll
+3288 DEBUG: Skipping SHLWAPI.dll dependency of python36.dll
+3295 DEBUG: Skipping WS2_32.dll dependency of python36.dll
+3302 DEBUG: Skipping VERSION.dll dependency of python36.dll
+3310 DEBUG: Skipping ADVAPI32.dll dependency of python36.dll
+3310 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll
+3326 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll
+3335 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-locale-l1-1-0.dll
+3340 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll
+3350 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll
+3360 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\ucrtbase.dll
+3381 DEBUG: Adding api-ms-win-core-rtlsupport-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-rtlsupport-l1-1-0.dll
+3383 DEBUG: Adding api-ms-win-core-console-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-console-l1-1-0.dll
+3385 DEBUG: Adding api-ms-win-core-synch-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-synch-l1-1-0.dll
+3386 DEBUG: Adding api-ms-win-core-file-l2-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-file-l2-1-0.dll
+3388 DEBUG: Adding api-ms-win-core-processthreads-l1-1-1.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-processthreads-l1-1-1.dll
+3391 DEBUG: Adding api-ms-win-core-timezone-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-timezone-l1-1-0.dll
+3393 DEBUG: Adding api-ms-win-core-file-l1-2-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-file-l1-2-0.dll
+3394 DEBUG: Adding api-ms-win-core-util-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-util-l1-1-0.dll
+3396 DEBUG: Adding api-ms-win-core-heap-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-heap-l1-1-0.dll
+3398 DEBUG: Adding api-ms-win-core-processthreads-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-processthreads-l1-1-0.dll
+3400 DEBUG: Adding api-ms-win-core-handle-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-handle-l1-1-0.dll
+3405 DEBUG: Adding api-ms-win-core-file-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-file-l1-1-0.dll
+3408 DEBUG: Adding api-ms-win-core-debug-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-debug-l1-1-0.dll
+3410 DEBUG: Adding api-ms-win-core-processenvironment-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-processenvironment-l1-1-0.dll
+3411 DEBUG: Adding api-ms-win-core-string-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-string-l1-1-0.dll
+3414 DEBUG: Adding api-ms-win-core-libraryloader-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-libraryloader-l1-1-0.dll
+3416 DEBUG: Adding api-ms-win-core-memory-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-memory-l1-1-0.dll
+3417 DEBUG: Adding api-ms-win-core-interlocked-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-interlocked-l1-1-0.dll
+3420 DEBUG: Adding api-ms-win-core-synch-l1-2-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-synch-l1-2-0.dll
+3421 DEBUG: Adding api-ms-win-core-sysinfo-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-sysinfo-l1-1-0.dll
+3422 DEBUG: Adding api-ms-win-core-datetime-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-datetime-l1-1-0.dll
+3425 DEBUG: Adding api-ms-win-core-errorhandling-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-errorhandling-l1-1-0.dll
+3427 DEBUG: Adding api-ms-win-core-profile-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-profile-l1-1-0.dll
+3429 DEBUG: Adding api-ms-win-core-localization-l1-2-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-localization-l1-2-0.dll
+3431 DEBUG: Adding api-ms-win-core-namedpipe-l1-1-0.dll dependency of ucrtbase.dll from c:\users\administrator\.conda\envs\work\api-ms-win-core-namedpipe-l1-1-0.dll
+3431 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll
+3436 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-process-l1-1-0.dll
+3441 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll
+3446 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-conio-l1-1-0.dll
+3449 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll
+3456 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-rtlsupport-l1-1-0.dll
+3463 DEBUG: Skipping ntdll.dll dependency of api-ms-win-core-rtlsupport-l1-1-0.dll
+3463 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-console-l1-1-0.dll
+3469 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-console-l1-1-0.dll
+3470 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-synch-l1-1-0.dll
+3477 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-synch-l1-1-0.dll
+3477 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-file-l2-1-0.dll
+3482 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-file-l2-1-0.dll
+3482 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-processthreads-l1-1-1.dll
+3490 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-processthreads-l1-1-1.dll
+3491 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-timezone-l1-1-0.dll
+3497 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-timezone-l1-1-0.dll
+3498 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-file-l1-2-0.dll
+3503 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-file-l1-2-0.dll
+3503 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-util-l1-1-0.dll
+3511 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-util-l1-1-0.dll
+3511 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-heap-l1-1-0.dll
+3516 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-heap-l1-1-0.dll
+3517 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-processthreads-l1-1-0.dll
+3524 DEBUG: Skipping advapi32.dll dependency of api-ms-win-core-processthreads-l1-1-0.dll
+3530 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-processthreads-l1-1-0.dll
+3530 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-handle-l1-1-0.dll
+3537 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-handle-l1-1-0.dll
+3537 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-file-l1-1-0.dll
+3546 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-file-l1-1-0.dll
+3546 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-debug-l1-1-0.dll
+3551 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-debug-l1-1-0.dll
+3551 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-processenvironment-l1-1-0.dll
+3559 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-processenvironment-l1-1-0.dll
+3559 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-string-l1-1-0.dll
+3564 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-string-l1-1-0.dll
+3564 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-libraryloader-l1-1-0.dll
+3571 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-libraryloader-l1-1-0.dll
+3571 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-memory-l1-1-0.dll
+3577 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-memory-l1-1-0.dll
+3577 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-interlocked-l1-1-0.dll
+3582 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-interlocked-l1-1-0.dll
+3582 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-synch-l1-2-0.dll
+3589 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-synch-l1-2-0.dll
+3589 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-sysinfo-l1-1-0.dll
+3596 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-sysinfo-l1-1-0.dll
+3596 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-datetime-l1-1-0.dll
+3601 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-datetime-l1-1-0.dll
+3601 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-errorhandling-l1-1-0.dll
+3607 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-errorhandling-l1-1-0.dll
+3607 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-profile-l1-1-0.dll
+3612 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-profile-l1-1-0.dll
+3613 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-localization-l1-2-0.dll
+3620 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-localization-l1-2-0.dll
+3620 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-core-namedpipe-l1-1-0.dll
+3629 DEBUG: Skipping advapi32.dll dependency of api-ms-win-core-namedpipe-l1-1-0.dll
+3633 DEBUG: Skipping kernel32.dll dependency of api-ms-win-core-namedpipe-l1-1-0.dll
+3634 INFO: Caching module hooks...
+3640 INFO: Analyzing E:\Applications\5_screen_locker\screen_locker_beta\src\main\python\wall.py
+5566 INFO: Loading module hooks...
+5566 INFO: Loading module hook "hook-encodings.py"...
+5567 DEBUG: Collecting submodules for encodings
+5684 DEBUG: collect_submodules - Found submodules: {'encodings.cp1254', 'encodings.idna', 'encodings.cp861', 'encodings.iso2022_kr', 'encodings.utf_16_le', 'encodings', 'encodings.cp85
+5', 'encodings.rot_13', 'encodings.iso8859_15', 'encodings.gb2312', 'encodings.cp1125', 'encodings.gb18030', 'encodings.cp949', 'encodings.uu_codec', 'encodings.mbcs', 'encodings.cp125
+0', 'encodings.euc_jisx0213', 'encodings.mac_latin2', 'encodings.cp737', 'encodings.ascii', 'encodings.cp852', 'encodings.iso8859_6', 'encodings.iso8859_11', 'encodings.euc_jis_2004',
+'encodings.shift_jisx0213', 'encodings.hp_roman8', 'encodings.koi8_u', 'encodings.iso8859_16', 'encodings.cp1252', 'encodings.iso8859_4', 'encodings.koi8_t', 'encodings.utf_32_le', 'en
+codings.cp1255', 'encodings.koi8_r', 'encodings.cp856', 'encodings.cp037', 'encodings.cp932', 'encodings.euc_jp', 'encodings.cp273', 'encodings.mac_arabic', 'encodings.mac_romanian', '
+encodings.cp65001', 'encodings.cp862', 'encodings.mac_farsi', 'encodings.iso2022_jp_1', 'encodings.cp875', 'encodings.quopri_codec', 'encodings.big5hkscs', 'encodings.iso8859_1', 'enco
+dings.cp869', 'encodings.unicode_escape', 'encodings.cp1251', 'encodings.cp775', 'encodings.iso8859_13', 'encodings.utf_7', 'encodings.cp1257', 'encodings.aliases', 'encodings.iso8859_
+3', 'encodings.cp865', 'encodings.cp424', 'encodings.cp1006', 'encodings.base64_codec', 'encodings.cp500', 'encodings.utf_16_be', 'encodings.iso8859_9', 'encodings.iso2022_jp_2', 'enco
+dings.undefined', 'encodings.punycode', 'encodings.iso8859_5', 'encodings.iso8859_10', 'encodings.iso8859_2', 'encodings.tis_620', 'encodings.mac_centeuro', 'encodings.cp1026', 'encodi
+ngs.iso2022_jp_ext', 'encodings.big5', 'encodings.cp1258', 'encodings.cp850', 'encodings.johab', 'encodings.mac_turkish', 'encodings.palmos', 'encodings.mac_cyrillic', 'encodings.hex_c
+odec', 'encodings.oem', 'encodings.ptcp154', 'encodings.cp1256', 'encodings.cp720', 'encodings.iso8859_8', 'encodings.cp866', 'encodings.cp863', 'encodings.cp874', 'encodings.kz1048',
+'encodings.cp1140', 'encodings.cp860', 'encodings.iso8859_14', 'encodings.hz', 'encodings.mac_greek', 'encodings.charmap', 'encodings.cp1253', 'encodings.euc_kr', 'encodings.cp858', 'e
+ncodings.cp950', 'encodings.cp864', 'encodings.utf_8_sig', 'encodings.bz2_codec', 'encodings.iso2022_jp_2004', 'encodings.latin_1', 'encodings.iso2022_jp', 'encodings.zlib_codec', 'enc
+odings.utf_16', 'encodings.cp437', 'encodings.utf_32', 'encodings.shift_jis', 'encodings.mac_croatian', 'encodings.unicode_internal', 'encodings.iso8859_7', 'encodings.shift_jis_2004',
+ 'encodings.utf_8', 'encodings.gbk', 'encodings.iso2022_jp_3', 'encodings.utf_32_be', 'encodings.mac_iceland', 'encodings.cp857', 'encodings.raw_unicode_escape', 'encodings.mac_roman'}
+
+5692 INFO: Loading module hook "hook-pydoc.py"...
+5693 INFO: Loading module hook "hook-PyQt5.py"...
+5855 WARNING: Hidden import "PyQt5.sip" not found!
+5856 INFO: Loading module hook "hook-PyQt5.QtCore.py"...
+5859 DEBUG: add_qt5_dependencies: Examining c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtCore.pyd, based on hook of c:\users\administrator\.conda\envs\work\lib\sit
+e-packages\PyInstaller\hooks\hook-PyQt5.QtCore.py.
+5864 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+5866 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+5869 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+5873 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll -> parsed lib qt5core
+5873 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll.
+5903 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ws2_32.dll -> parsed lib ws2_32
+5905 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\python3.dll -> parsed lib python3
+5908 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll -> parsed lib api-ms-win-crt-string-l1-1-0
+5911 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\version.dll -> parsed lib version
+5913 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\msvcp140.dll -> parsed lib msvcp140
+5916 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\winmm.dll -> parsed lib winmm
+5918 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+5924 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\user32.dll -> parsed lib user32
+5926 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll -> parsed lib api-ms-win-crt-utility-l1-1-0
+5929 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+5931 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll -> parsed lib api-ms-win-crt-filesystem-l1-1-0
+5932 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll -> parsed lib api-ms-win-crt-heap-l1-1-0
+5936 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\shell32.dll -> parsed lib shell32
+5938 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll -> parsed lib api-ms-win-crt-math-l1-1-0
+5942 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll -> parsed lib api-ms-win-crt-runtime-l1-1-0
+5944 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll -> parsed lib api-ms-win-crt-convert-l1-1-0
+5947 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\mpr.dll -> parsed lib mpr
+5950 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\advapi32.dll -> parsed lib advapi32
+5951 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll -> parsed lib api-ms-win-crt-environment-l1-1-0
+5953 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+5957 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ole32.dll -> parsed lib ole32
+5959 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll -> parsed lib api-ms-win-crt-time-l1-1-0
+5962 DEBUG: add_qt5_dependencies: imports from hook-PyQt5.QtCore:
+  hiddenimports = ['PyQt5.QtCore']
+  binaries = []
+  datas = [('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/translations\\qtbase_*.qm', 'PyQt5\\Qt\\translations')]
+5968 INFO: Loading module hook "hook-PyQt5.QtGui.py"...
+5969 DEBUG: add_qt5_dependencies: Examining c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtGui.pyd, based on hook of c:\users\administrator\.conda\envs\work\lib\site
+-packages\PyInstaller\hooks\hook-PyQt5.QtGui.py.
+5980 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+5982 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\python3.dll -> parsed lib python3
+5985 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+5988 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll -> parsed lib qt5core
+5988 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll.
+6014 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ws2_32.dll -> parsed lib ws2_32
+6016 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll -> parsed lib api-ms-win-crt-string-l1-1-0
+6019 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\version.dll -> parsed lib version
+6021 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\msvcp140.dll -> parsed lib msvcp140
+6027 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\winmm.dll -> parsed lib winmm
+6028 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+6032 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\user32.dll -> parsed lib user32
+6034 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll -> parsed lib api-ms-win-crt-utility-l1-1-0
+6037 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+6038 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll -> parsed lib api-ms-win-crt-filesystem-l1-1-0
+6041 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll -> parsed lib api-ms-win-crt-heap-l1-1-0
+6045 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\shell32.dll -> parsed lib shell32
+6047 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll -> parsed lib api-ms-win-crt-math-l1-1-0
+6051 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5gui.dll -> parsed lib qt5gui
+6051 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5gui.dll.
+6105 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll -> parsed lib api-ms-win-crt-runtime-l1-1-0
+6108 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll -> parsed lib api-ms-win-crt-convert-l1-1-0
+6110 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\mpr.dll -> parsed lib mpr
+6114 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\advapi32.dll -> parsed lib advapi32
+6116 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll -> parsed lib api-ms-win-crt-environment-l1-1-0
+6118 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6123 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ole32.dll -> parsed lib ole32
+6126 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll -> parsed lib api-ms-win-crt-time-l1-1-0
+6129 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll -> parsed lib qt5core
+6129 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll.
+6155 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ws2_32.dll -> parsed lib ws2_32
+6158 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll -> parsed lib api-ms-win-crt-string-l1-1-0
+6162 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\gdi32.dll -> parsed lib gdi32
+6165 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\version.dll -> parsed lib version
+6167 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\msvcp140.dll -> parsed lib msvcp140
+6170 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\winmm.dll -> parsed lib winmm
+6173 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-locale-l1-1-0.dll -> parsed lib api-ms-win-crt-locale-l1-1-0
+6176 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+6180 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\user32.dll -> parsed lib user32
+6182 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll -> parsed lib api-ms-win-crt-utility-l1-1-0
+6185 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+6187 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll -> parsed lib api-ms-win-crt-filesystem-l1-1-0
+6188 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll -> parsed lib api-ms-win-crt-heap-l1-1-0
+6192 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll -> parsed lib api-ms-win-crt-math-l1-1-0
+6195 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\shell32.dll -> parsed lib shell32
+6197 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll -> parsed lib api-ms-win-crt-runtime-l1-1-0
+6198 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll -> parsed lib api-ms-win-crt-convert-l1-1-0
+6201 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\mpr.dll -> parsed lib mpr
+6204 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\advapi32.dll -> parsed lib advapi32
+6207 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll -> parsed lib api-ms-win-crt-environment-l1-1-0
+6209 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6213 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ole32.dll -> parsed lib ole32
+6215 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll -> parsed lib api-ms-win-crt-time-l1-1-0
+6216 DEBUG: Found plugin files [] for plugin 'platformthemes
+6217 DEBUG: Found plugin files ['C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qminimal.dll', 'C:/users/administrator/.conda/envs/work/lib/site
+-packages/PyQt5/Qt/plugins\\platforms\\qoffscreen.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qwindows.dll'] for plugin 'platforms
+6217 DEBUG: Found plugin files [] for plugin 'platforminputcontexts
+6218 DEBUG: Found plugin files [] for plugin 'styles
+6219 DEBUG: Found plugin files ['C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\iconengines\\qsvgicon.dll'] for plugin 'iconengines
+6224 DEBUG: Found plugin files ['C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qgif.dll', 'C:/users/administrator/.conda/envs/work/lib/site-
+packages/PyQt5/Qt/plugins\\imageformats\\qicns.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qico.dll', 'C:/users/administrator/.cond
+a/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qjpeg.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qsvg.dll', 'C:/user
+s/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qtga.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\
+\qtiff.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qwbmp.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/
+plugins\\imageformats\\qwebp.dll'] for plugin 'imageformats
+6225 DEBUG: Found plugin files [] for plugin 'accessible
+6228 DEBUG: add_qt5_dependencies: imports from hook-PyQt5.QtGui:
+  hiddenimports = ['PyQt5.QtCore', 'PyQt5.QtGui']
+  binaries = [('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qminimal.dll', 'PyQt5\\Qt\\plugins\\platforms'), ('C:/users/administrator/.conda/
+envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qoffscreen.dll', 'PyQt5\\Qt\\plugins\\platforms'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins
+\\platforms\\qwindows.dll', 'PyQt5\\Qt\\plugins\\platforms'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\iconengines\\qsvgicon.dll', 'PyQt5\\Qt\\plug
+ins\\iconengines'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qgif.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator
+/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qicns.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Q
+t/plugins\\imageformats\\qico.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qjpeg.dll', 'PyQt5\
+\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qsvg.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/adm
+inistrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qtga.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-package
+s/PyQt5/Qt/plugins\\imageformats\\qtiff.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qwbmp.dll
+', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qwebp.dll', 'PyQt5\\Qt\\plugins\\imageformats')]
+  datas = [('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/translations\\qtbase_*.qm', 'PyQt5\\Qt\\translations')]
+6236 INFO: Loading module hook "hook-PyQt5.QtNetwork.py"...
+6237 DEBUG: add_qt5_dependencies: Examining c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtNetwork.pyd, based on hook of c:\users\administrator\.conda\envs\work\lib\
+site-packages\PyInstaller\hooks\hook-PyQt5.QtNetwork.py.
+6242 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6244 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\python3.dll -> parsed lib python3
+6247 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+6250 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll -> parsed lib qt5core
+6251 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll.
+6273 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ws2_32.dll -> parsed lib ws2_32
+6273 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5network.dll -> parsed lib qt5network
+6273 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5network.dll.
+6273 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll -> parsed lib api-ms-win-crt-string-l1-1-0
+6289 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\version.dll -> parsed lib version
+6289 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\msvcp140.dll -> parsed lib msvcp140
+6289 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\winmm.dll -> parsed lib winmm
+6289 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+6289 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\user32.dll -> parsed lib user32
+6289 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll -> parsed lib api-ms-win-crt-utility-l1-1-0
+6289 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+6304 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll -> parsed lib api-ms-win-crt-filesystem-l1-1-0
+6304 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\iphlpapi.dll -> parsed lib iphlpapi
+6304 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll -> parsed lib api-ms-win-crt-heap-l1-1-0
+6304 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\shell32.dll -> parsed lib shell32
+6304 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll -> parsed lib api-ms-win-crt-math-l1-1-0
+6304 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\dnsapi.dll -> parsed lib dnsapi
+6320 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll -> parsed lib api-ms-win-crt-runtime-l1-1-0
+6320 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll -> parsed lib api-ms-win-crt-convert-l1-1-0
+6320 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\mpr.dll -> parsed lib mpr
+6320 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\advapi32.dll -> parsed lib advapi32
+6320 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll -> parsed lib api-ms-win-crt-environment-l1-1-0
+6320 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6336 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ole32.dll -> parsed lib ole32
+6336 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll -> parsed lib api-ms-win-crt-time-l1-1-0
+6336 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll -> parsed lib qt5core
+6336 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll.
+6367 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\crypt32.dll -> parsed lib crypt32
+6367 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ws2_32.dll -> parsed lib ws2_32
+6367 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll -> parsed lib api-ms-win-crt-string-l1-1-0
+6367 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\version.dll -> parsed lib version
+6367 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\msvcp140.dll -> parsed lib msvcp140
+6367 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\winmm.dll -> parsed lib winmm
+6382 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+6382 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\user32.dll -> parsed lib user32
+6382 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll -> parsed lib api-ms-win-crt-utility-l1-1-0
+6382 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+6382 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll -> parsed lib api-ms-win-crt-filesystem-l1-1-0
+6382 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll -> parsed lib api-ms-win-crt-heap-l1-1-0
+6398 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\shell32.dll -> parsed lib shell32
+6398 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll -> parsed lib api-ms-win-crt-math-l1-1-0
+6398 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll -> parsed lib api-ms-win-crt-runtime-l1-1-0
+6398 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll -> parsed lib api-ms-win-crt-convert-l1-1-0
+6398 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\mpr.dll -> parsed lib mpr
+6398 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\advapi32.dll -> parsed lib advapi32
+6398 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll -> parsed lib api-ms-win-crt-environment-l1-1-0
+6398 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6414 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ole32.dll -> parsed lib ole32
+6414 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll -> parsed lib api-ms-win-crt-time-l1-1-0
+6414 DEBUG: Found plugin files ['C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\bearer\\qgenericbearer.dll', 'C:/users/administrator/.conda/envs/work/lib/s
+ite-packages/PyQt5/Qt/plugins\\bearer\\qnativewifibearer.dll'] for plugin 'bearer
+6414 DEBUG: add_qt5_dependencies: imports from hook-PyQt5.QtNetwork:
+  hiddenimports = ['PyQt5.QtNetwork', 'PyQt5.QtCore']
+  binaries = [('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\bearer\\qgenericbearer.dll', 'PyQt5\\Qt\\plugins\\bearer'), ('C:/users/administrator/.conda/
+envs/work/lib/site-packages/PyQt5/Qt/plugins\\bearer\\qnativewifibearer.dll', 'PyQt5\\Qt\\plugins\\bearer')]
+  datas = [('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/translations\\qtbase_*.qm', 'PyQt5\\Qt\\translations')]
+6414 INFO: Loading module hook "hook-PyQt5.QtWidgets.py"...
+6429 DEBUG: add_qt5_dependencies: Examining c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtWidgets.pyd, based on hook of c:\users\administrator\.conda\envs\work\lib\
+site-packages\PyInstaller\hooks\hook-PyQt5.QtWidgets.py.
+6429 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5widgets.dll -> parsed lib qt5widgets
+6429 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5widgets.dll.
+6460 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6460 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll -> parsed lib qt5core
+6460 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll.
+6476 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ws2_32.dll -> parsed lib ws2_32
+6476 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\python3.dll -> parsed lib python3
+6492 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll -> parsed lib api-ms-win-crt-string-l1-1-0
+6492 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\gdi32.dll -> parsed lib gdi32
+6492 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\version.dll -> parsed lib version
+6492 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\msvcp140.dll -> parsed lib msvcp140
+6492 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\winmm.dll -> parsed lib winmm
+6492 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\dwmapi.dll -> parsed lib dwmapi
+6509 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+6513 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\user32.dll -> parsed lib user32
+6516 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\uxtheme.dll -> parsed lib uxtheme
+6519 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+6521 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll -> parsed lib api-ms-win-crt-utility-l1-1-0
+6522 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll -> parsed lib api-ms-win-crt-filesystem-l1-1-0
+6525 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll -> parsed lib api-ms-win-crt-heap-l1-1-0
+6529 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\shell32.dll -> parsed lib shell32
+6530 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll -> parsed lib api-ms-win-crt-math-l1-1-0
+6534 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5gui.dll -> parsed lib qt5gui
+6534 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5gui.dll.
+6586 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll -> parsed lib api-ms-win-crt-runtime-l1-1-0
+6587 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll -> parsed lib api-ms-win-crt-convert-l1-1-0
+6591 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\mpr.dll -> parsed lib mpr
+6594 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\advapi32.dll -> parsed lib advapi32
+6596 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll -> parsed lib api-ms-win-crt-environment-l1-1-0
+6599 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6602 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ole32.dll -> parsed lib ole32
+6604 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll -> parsed lib api-ms-win-crt-time-l1-1-0
+6609 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll -> parsed lib qt5core
+6609 DEBUG: add_qt5_dependencies: Import of c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll.
+6639 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ws2_32.dll -> parsed lib ws2_32
+6643 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-string-l1-1-0.dll -> parsed lib api-ms-win-crt-string-l1-1-0
+6646 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\gdi32.dll -> parsed lib gdi32
+6649 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\version.dll -> parsed lib version
+6651 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\msvcp140.dll -> parsed lib msvcp140
+6654 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\winmm.dll -> parsed lib winmm
+6655 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-locale-l1-1-0.dll -> parsed lib api-ms-win-crt-locale-l1-1-0
+6658 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-stdio-l1-1-0.dll -> parsed lib api-ms-win-crt-stdio-l1-1-0
+6662 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\user32.dll -> parsed lib user32
+6663 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll -> parsed lib api-ms-win-crt-utility-l1-1-0
+6667 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\kernel32.dll -> parsed lib kernel32
+6669 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-filesystem-l1-1-0.dll -> parsed lib api-ms-win-crt-filesystem-l1-1-0
+6671 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-heap-l1-1-0.dll -> parsed lib api-ms-win-crt-heap-l1-1-0
+6673 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-math-l1-1-0.dll -> parsed lib api-ms-win-crt-math-l1-1-0
+6677 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\shell32.dll -> parsed lib shell32
+6678 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-runtime-l1-1-0.dll -> parsed lib api-ms-win-crt-runtime-l1-1-0
+6680 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-convert-l1-1-0.dll -> parsed lib api-ms-win-crt-convert-l1-1-0
+6683 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\mpr.dll -> parsed lib mpr
+6686 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\advapi32.dll -> parsed lib advapi32
+6688 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-environment-l1-1-0.dll -> parsed lib api-ms-win-crt-environment-l1-1-0
+6691 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\vcruntime140.dll -> parsed lib vcruntime140
+6696 DEBUG: add_qt5_dependencies: raw lib C:\WINDOWS\system32\ole32.dll -> parsed lib ole32
+6698 DEBUG: add_qt5_dependencies: raw lib c:\users\administrator\.conda\envs\work\api-ms-win-crt-time-l1-1-0.dll -> parsed lib api-ms-win-crt-time-l1-1-0
+6698 DEBUG: Found plugin files [] for plugin 'platformthemes
+6699 DEBUG: Found plugin files ['C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qminimal.dll', 'C:/users/administrator/.conda/envs/work/lib/site
+-packages/PyQt5/Qt/plugins\\platforms\\qoffscreen.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qwindows.dll'] for plugin 'platforms
+6700 DEBUG: Found plugin files [] for plugin 'platforminputcontexts
+6700 DEBUG: Found plugin files [] for plugin 'styles
+6701 DEBUG: Found plugin files ['C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\iconengines\\qsvgicon.dll'] for plugin 'iconengines
+6702 DEBUG: Found plugin files ['C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qgif.dll', 'C:/users/administrator/.conda/envs/work/lib/site-
+packages/PyQt5/Qt/plugins\\imageformats\\qicns.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qico.dll', 'C:/users/administrator/.cond
+a/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qjpeg.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qsvg.dll', 'C:/user
+s/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qtga.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\
+\qtiff.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qwbmp.dll', 'C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/
+plugins\\imageformats\\qwebp.dll'] for plugin 'imageformats
+6703 DEBUG: Found plugin files [] for plugin 'accessible
+6706 DEBUG: add_qt5_dependencies: imports from hook-PyQt5.QtWidgets:
+  hiddenimports = ['PyQt5.QtWidgets', 'PyQt5.QtCore', 'PyQt5.QtGui']
+  binaries = [('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qminimal.dll', 'PyQt5\\Qt\\plugins\\platforms'), ('C:/users/administrator/.conda/
+envs/work/lib/site-packages/PyQt5/Qt/plugins\\platforms\\qoffscreen.dll', 'PyQt5\\Qt\\plugins\\platforms'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins
+\\platforms\\qwindows.dll', 'PyQt5\\Qt\\plugins\\platforms'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\iconengines\\qsvgicon.dll', 'PyQt5\\Qt\\plug
+ins\\iconengines'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qgif.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator
+/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qicns.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Q
+t/plugins\\imageformats\\qico.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qjpeg.dll', 'PyQt5\
+\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qsvg.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/adm
+inistrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qtga.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-package
+s/PyQt5/Qt/plugins\\imageformats\\qtiff.dll', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qwbmp.dll
+', 'PyQt5\\Qt\\plugins\\imageformats'), ('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/plugins\\imageformats\\qwebp.dll', 'PyQt5\\Qt\\plugins\\imageformats')]
+  datas = [('C:/users/administrator/.conda/envs/work/lib/site-packages/PyQt5/Qt/translations\\qtbase_*.qm', 'PyQt5\\Qt\\translations')]
+6715 INFO: Loading module hook "hook-xml.py"...
+6817 INFO: checking Tree
+6819 DEBUG: Looking for egg data files...
+6820 INFO: Looking for ctypes DLLs
+6820 DEBUG: Scanning uuid for shared libraries or dlls
+6830 INFO: Analyzing run-time hooks ...
+6830 INFO: Including custom run-time hook 'E:\\Applications\\5_screen_locker\\screen_locker_beta\\target\\PyInstaller\\fbs_pyinstaller_hook.py'
+6834 INFO: Including run-time hook 'pyi_rth_qt5.py'
+6841 INFO: Looking for dynamic libraries
+6848 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\libeay32.dll
+6875 DEBUG: Skipping USER32.dll dependency of libeay32.dll
+6879 DEBUG: Skipping KERNEL32.dll dependency of libeay32.dll
+6882 DEBUG: Adding api-ms-win-crt-utility-l1-1-0.dll dependency of libeay32.dll from c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll
+6886 DEBUG: Skipping WS2_32.dll dependency of libeay32.dll
+6889 DEBUG: Skipping GDI32.dll dependency of libeay32.dll
+6894 DEBUG: Skipping ADVAPI32.dll dependency of libeay32.dll
+6894 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qjpeg.dll
+6900 DEBUG: Skipping KERNEL32.dll dependency of qjpeg.dll
+6903 DEBUG: Adding Qt5Core.dll dependency of qjpeg.dll from c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll
+6908 DEBUG: Adding Qt5Gui.dll dependency of qjpeg.dll from c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5gui.dll
+6908 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qwebp.dll
+6917 DEBUG: Skipping KERNEL32.dll dependency of qwebp.dll
+6925 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\platforms\qwindows.dll
+6932 DEBUG: Skipping OLEAUT32.dll dependency of qwindows.dll
+6935 DEBUG: Skipping ole32.dll dependency of qwindows.dll
+6943 DEBUG: Skipping GDI32.dll dependency of qwindows.dll
+6947 DEBUG: Skipping KERNEL32.dll dependency of qwindows.dll
+6950 DEBUG: Skipping ADVAPI32.dll dependency of qwindows.dll
+6953 DEBUG: Adding MSVCP140.dll dependency of qwindows.dll from c:\users\administrator\.conda\envs\work\msvcp140.dll
+6956 DEBUG: Skipping WINMM.dll dependency of qwindows.dll
+6961 DEBUG: Skipping dwmapi.dll dependency of qwindows.dll
+6964 DEBUG: Skipping USER32.dll dependency of qwindows.dll
+6969 DEBUG: Skipping SHELL32.dll dependency of qwindows.dll
+6972 DEBUG: Skipping IMM32.dll dependency of qwindows.dll
+6977 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\bearer\qnativewifibearer.dll
+6986 DEBUG: Skipping KERNEL32.dll dependency of qnativewifibearer.dll
+6995 DEBUG: Adding Qt5Network.dll dependency of qnativewifibearer.dll from c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5network.dll
+6995 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\platforms\qminimal.dll
+7003 DEBUG: Skipping ole32.dll dependency of qminimal.dll
+7006 DEBUG: Skipping USER32.dll dependency of qminimal.dll
+7012 DEBUG: Skipping KERNEL32.dll dependency of qminimal.dll
+7025 DEBUG: Skipping GDI32.dll dependency of qminimal.dll
+7029 DEBUG: Skipping ADVAPI32.dll dependency of qminimal.dll
+7029 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qsvg.dll
+7035 DEBUG: Skipping KERNEL32.dll dependency of qsvg.dll
+7038 DEBUG: Adding Qt5Svg.dll dependency of qsvg.dll from c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5svg.dll
+7046 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qtga.dll
+7053 DEBUG: Skipping KERNEL32.dll dependency of qtga.dll
+7060 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\iconengines\qsvgicon.dll
+7066 DEBUG: Skipping KERNEL32.dll dependency of qsvgicon.dll
+7079 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\bearer\qgenericbearer.dll
+7085 DEBUG: Skipping IPHLPAPI.DLL dependency of qgenericbearer.dll
+7088 DEBUG: Skipping KERNEL32.dll dependency of qgenericbearer.dll
+7097 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\ssleay32.dll
+7104 DEBUG: Skipping KERNEL32.dll dependency of ssleay32.dll
+7107 DEBUG: Adding LIBEAY32.dll dependency of ssleay32.dll from C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\LIBEAY32.dll
+7108 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qtiff.dll
+7116 DEBUG: Skipping KERNEL32.dll dependency of qtiff.dll
+7125 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qwbmp.dll
+7131 DEBUG: Skipping KERNEL32.dll dependency of qwbmp.dll
+7138 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qico.dll
+7145 DEBUG: Skipping KERNEL32.dll dependency of qico.dll
+7151 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qgif.dll
+7159 DEBUG: Skipping KERNEL32.dll dependency of qgif.dll
+7170 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\imageformats\qicns.dll
+7177 DEBUG: Skipping KERNEL32.dll dependency of qicns.dll
+7183 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\plugins\platforms\qoffscreen.dll
+7194 DEBUG: Skipping KERNEL32.dll dependency of qoffscreen.dll
+7200 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\_ssl.pyd
+7202 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\_ssl.pyd:
+7202 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7202 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7210 DEBUG: Skipping USER32.dll dependency of _ssl.pyd
+7215 DEBUG: Skipping KERNEL32.dll dependency of _ssl.pyd
+7218 DEBUG: Skipping CRYPT32.dll dependency of _ssl.pyd
+7221 DEBUG: Skipping WS2_32.dll dependency of _ssl.pyd
+7225 DEBUG: Skipping GDI32.dll dependency of _ssl.pyd
+7229 DEBUG: Skipping ADVAPI32.dll dependency of _ssl.pyd
+7231 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\unicodedata.pyd
+7232 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\unicodedata.pyd:
+7232 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7232 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7238 DEBUG: Skipping KERNEL32.dll dependency of unicodedata.pyd
+7238 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\pyexpat.pyd
+7240 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\pyexpat.pyd:
+7240 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7240 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7247 DEBUG: Skipping KERNEL32.dll dependency of pyexpat.pyd
+7247 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\_hashlib.pyd
+7248 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\_hashlib.pyd:
+7248 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7249 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7255 DEBUG: Skipping USER32.dll dependency of _hashlib.pyd
+7261 DEBUG: Skipping KERNEL32.dll dependency of _hashlib.pyd
+7265 DEBUG: Skipping GDI32.dll dependency of _hashlib.pyd
+7268 DEBUG: Skipping ADVAPI32.dll dependency of _hashlib.pyd
+7269 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\select.pyd
+7270 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\select.pyd:
+7270 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7270 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7279 DEBUG: Skipping KERNEL32.dll dependency of select.pyd
+7282 DEBUG: Skipping WS2_32.dll dependency of select.pyd
+7283 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\_bz2.pyd
+7284 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\_bz2.pyd:
+7284 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7285 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7292 DEBUG: Skipping KERNEL32.dll dependency of _bz2.pyd
+7292 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\_lzma.pyd
+7294 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\_lzma.pyd:
+7294 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7294 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7300 DEBUG: Skipping KERNEL32.dll dependency of _lzma.pyd
+7300 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\_socket.pyd
+7302 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\_socket.pyd:
+7302 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7302 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7308 DEBUG: Skipping KERNEL32.dll dependency of _socket.pyd
+7313 DEBUG: Skipping WS2_32.dll dependency of _socket.pyd
+7313 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtNetwork.pyd
+7319 DEBUG: Skipping KERNEL32.dll dependency of QtNetwork.pyd
+7325 DEBUG: Adding python3.dll dependency of QtNetwork.pyd from c:\users\administrator\.conda\envs\work\python3.dll
+7329 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\sip.pyd
+7337 DEBUG: Skipping KERNEL32.dll dependency of sip.pyd
+7337 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\win32\win32wnet.pyd
+7347 DEBUG: Adding pywintypes36.dll dependency of win32wnet.pyd from c:\users\administrator\.conda\envs\work\lib\site-packages\pywin32_system32\pywintypes36.dll
+7351 DEBUG: Skipping KERNEL32.dll dependency of win32wnet.pyd
+7356 DEBUG: Skipping NETAPI32.dll dependency of win32wnet.pyd
+7360 DEBUG: Skipping MPR.dll dependency of win32wnet.pyd
+7360 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\DLLs\_ctypes.pyd
+7361 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\DLLs\_ctypes.pyd:
+7362 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7362 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7368 DEBUG: Skipping ole32.dll dependency of _ctypes.pyd
+7371 DEBUG: Skipping OLEAUT32.dll dependency of _ctypes.pyd
+7374 DEBUG: Skipping KERNEL32.dll dependency of _ctypes.pyd
+7375 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyHook3\_cpyHook.cp36-win_amd64.pyd
+7386 DEBUG: Skipping USER32.dll dependency of _cpyHook.cp36-win_amd64.pyd
+7389 DEBUG: Skipping KERNEL32.dll dependency of _cpyHook.cp36-win_amd64.pyd
+7389 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtGui.pyd
+7397 DEBUG: Skipping KERNEL32.dll dependency of QtGui.pyd
+7405 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtCore.pyd
+7413 DEBUG: Skipping KERNEL32.dll dependency of QtCore.pyd
+7418 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\QtWidgets.pyd
+7427 DEBUG: Adding Qt5Widgets.dll dependency of QtWidgets.pyd from c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5widgets.dll
+7431 DEBUG: Skipping KERNEL32.dll dependency of QtWidgets.pyd
+7439 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\api-ms-win-crt-utility-l1-1-0.dll
+7442 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5core.dll
+7469 DEBUG: Skipping ole32.dll dependency of qt5core.dll
+7472 DEBUG: Skipping VERSION.dll dependency of qt5core.dll
+7479 DEBUG: Skipping KERNEL32.dll dependency of qt5core.dll
+7483 DEBUG: Skipping MPR.dll dependency of qt5core.dll
+7486 DEBUG: Skipping ADVAPI32.dll dependency of qt5core.dll
+7490 DEBUG: Skipping WS2_32.dll dependency of qt5core.dll
+7493 DEBUG: Adding MSVCP140.dll dependency of qt5core.dll from c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\MSVCP140.dll
+7497 DEBUG: Skipping WINMM.dll dependency of qt5core.dll
+7500 DEBUG: Skipping USER32.dll dependency of qt5core.dll
+7504 DEBUG: Skipping SHELL32.dll dependency of qt5core.dll
+7504 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5gui.dll
+7560 DEBUG: Skipping ole32.dll dependency of qt5gui.dll
+7563 DEBUG: Skipping USER32.dll dependency of qt5gui.dll
+7568 DEBUG: Skipping KERNEL32.dll dependency of qt5gui.dll
+7571 DEBUG: Skipping GDI32.dll dependency of qt5gui.dll
+7575 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\msvcp140.dll
+7585 DEBUG: Skipping KERNEL32.dll dependency of msvcp140.dll
+7585 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5network.dll
+7596 DEBUG: Skipping IPHLPAPI.DLL dependency of qt5network.dll
+7599 DEBUG: Skipping KERNEL32.dll dependency of qt5network.dll
+7603 DEBUG: Skipping CRYPT32.dll dependency of qt5network.dll
+7608 DEBUG: Skipping WS2_32.dll dependency of qt5network.dll
+7612 DEBUG: Skipping DNSAPI.dll dependency of qt5network.dll
+7615 DEBUG: Skipping ADVAPI32.dll dependency of qt5network.dll
+7616 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5svg.dll
+7632 DEBUG: Skipping KERNEL32.dll dependency of qt5svg.dll
+7632 DEBUG: Analyzing C:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\LIBEAY32.dll
+7659 DEBUG: Skipping USER32.dll dependency of LIBEAY32.dll
+7662 DEBUG: Skipping KERNEL32.dll dependency of LIBEAY32.dll
+7666 DEBUG: Skipping WS2_32.dll dependency of LIBEAY32.dll
+7670 DEBUG: Skipping GDI32.dll dependency of LIBEAY32.dll
+7677 DEBUG: Skipping ADVAPI32.dll dependency of LIBEAY32.dll
+7677 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\python3.dll
+7678 DEBUG: Dependent assemblies of c:\users\administrator\.conda\envs\work\python3.dll:
+7678 DEBUG: *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7679 DEBUG: Skipping assembly *_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_none
+7726 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\pywin32_system32\pywintypes36.dll
+7735 DEBUG: Skipping ole32.dll dependency of pywintypes36.dll
+7738 DEBUG: Skipping USER32.dll dependency of pywintypes36.dll
+7742 DEBUG: Skipping OLEAUT32.dll dependency of pywintypes36.dll
+7746 DEBUG: Skipping KERNEL32.dll dependency of pywintypes36.dll
+7749 DEBUG: Skipping ADVAPI32.dll dependency of pywintypes36.dll
+7749 DEBUG: Analyzing c:\users\administrator\.conda\envs\work\lib\site-packages\PyQt5\Qt\bin\qt5widgets.dll
+7776 DEBUG: Skipping dwmapi.dll dependency of qt5widgets.dll
+7780 DEBUG: Skipping USER32.dll dependency of qt5widgets.dll
+7783 DEBUG: Skipping UxTheme.dll dependency of qt5widgets.dll
+7786 DEBUG: Skipping KERNEL32.dll dependency of qt5widgets.dll
+7789 DEBUG: Skipping SHELL32.dll dependency of qt5widgets.dll
+7794 DEBUG: Skipping GDI32.dll dependency of qt5widgets.dll
+7795 INFO: Looking for eggs
+7795 INFO: Using Python library c:\users\administrator\.conda\envs\work\python36.dll
+7797 INFO: Found binding redirects:
+[]
+7801 INFO: Warnings written to E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker\warn-screen_locker.txt
+7873 INFO: Graph cross-reference written to E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker\xref-screen_locker.html
+7901 INFO: Graph drawing written to E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker\graph-screen_locker.dot
+7918 INFO: checking PYZ
+7922 INFO: Building because toc changed
+7922 INFO: Building PYZ (ZlibArchive) E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker\PYZ-00.pyz
+8639 INFO: Building PYZ (ZlibArchive) E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker\PYZ-00.pyz completed successfully.
+8651 INFO: checking PKG
+8652 INFO: Building because E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker\PYZ-00.pyz changed
+8652 INFO: Building PKG (CArchive) PKG-00.pkg
+8661 DEBUG: Compiling c:\users\administrator\.conda\envs\work\lib\site-packages\PyInstaller\loader\pyiboot01_bootstrap.py
+8662 DEBUG: Compiling c:\users\administrator\.conda\envs\work\lib\site-packages\PyInstaller\loader\pyiboot01_bootstrap.py
+8663 DEBUG: Compiling E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\fbs_pyinstaller_hook.py
+8664 DEBUG: Compiling E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\fbs_pyinstaller_hook.py
+8666 DEBUG: Compiling c:\users\administrator\.conda\envs\work\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_qt5.py
+8667 DEBUG: Compiling c:\users\administrator\.conda\envs\work\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_qt5.py
+8668 DEBUG: Compiling E:\Applications\5_screen_locker\screen_locker_beta\src\main\python\wall.py
+8669 DEBUG: Compiling E:\Applications\5_screen_locker\screen_locker_beta\src\main\python\wall.py
+8675 INFO: Building PKG (CArchive) PKG-00.pkg completed successfully.
+8677 INFO: Bootloader c:\users\administrator\.conda\envs\work\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run.exe
+8677 INFO: checking EXE
+8679 INFO: Rebuilding EXE-00.toc because pkg is more recent
+8679 INFO: Building EXE from EXE-00.toc
+8683 INFO: SRCPATH [('E:\\Applications\\5_screen_locker\\screen_locker_beta\\src\\main\\icons\\Icon.ico', None)]
+8683 INFO: Updating icons from ['E:\\Applications\\5_screen_locker\\screen_locker_beta\\src\\main\\icons\\Icon.ico'] to C:\Users\ADMINI~1\AppData\Local\Temp\tmpozamxk1m
+8684 INFO: Writing RT_GROUP_ICON 0 resource with 132 bytes
+8684 INFO: Writing RT_ICON 1 resource with 6351 bytes
+8685 INFO: Writing RT_ICON 2 resource with 67624 bytes
+8685 INFO: Writing RT_ICON 3 resource with 38056 bytes
+8685 INFO: Writing RT_ICON 4 resource with 21640 bytes
+8686 INFO: Writing RT_ICON 5 resource with 16936 bytes
+8686 INFO: Writing RT_ICON 6 resource with 9640 bytes
+8686 INFO: Writing RT_ICON 7 resource with 4264 bytes
+8686 INFO: Writing RT_ICON 8 resource with 2440 bytes
+8686 INFO: Writing RT_ICON 9 resource with 1128 bytes
+8696 INFO: Appending archive to EXE E:\Applications\5_screen_locker\screen_locker_beta\target\PyInstaller\screen_locker\screen_locker.exe
+8699 INFO: Building EXE from EXE-00.toc completed successfully.
+8703 INFO: checking COLLECT
+8705 INFO: Removing dir E:\Applications\5_screen_locker\screen_locker_beta\target\screen_locker
+8750 INFO: Building COLLECT COLLECT-00.toc
+9750 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+Done. You can now run `target\screen_locker\screen_locker.exe`. If
+that doesn't work, see https://build-system.fman.io/troubleshooting.
+

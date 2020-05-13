@@ -1,0 +1,7 @@
+{
+    "app_name": "screen_locker",
+    "author": "michael_xuan",
+    "main_module": "src/main/python/wall.py",
+    "version": "0.0.0"
+	"hidden_imports": ["Crypto.PublicKey", "Crypto.Hash", "aliyunsdkcore.vendored.requests.packages.urllib3.packages.six.moves", "aliyunsdkcore.vendored.six.moves", "Cookie", "Crypto", "Queue", "StringIO", "aliyunsdkcore", "backports", "cookielib", "dummy_thread", "simplejson", "cryptography", "urllib3", "urllib", "urllib2"]
+}

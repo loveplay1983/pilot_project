@@ -25,6 +25,9 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/valid" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/valid/fixed_pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/valid/random_SMS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/fixed_pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
