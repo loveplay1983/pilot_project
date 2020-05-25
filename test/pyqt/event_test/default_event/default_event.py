@@ -1,6 +1,5 @@
 from default_e_lib import *
 
-
 class DefaultEvent(QWidget):
 
     def __init__(self, parent=None):

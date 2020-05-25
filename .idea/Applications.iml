@@ -28,6 +28,12 @@
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/fixed_pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_screen_locker/screen_locker_beta/src/main/python/validation/random_SMS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/event_test/event_filter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/event_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/event_test/drag_drop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/event_test/drag_drop_project" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/dialog_multi_window" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/dialog_multi_window/custom_dialog" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
