@@ -34,6 +34,7 @@
       <sourceFolder url="file://$MODULE_DIR$/test/pyqt/event_test/drag_drop_project" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/pyqt/dialog_multi_window" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/pyqt/dialog_multi_window/custom_dialog" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/pyqt/database/qsqltable" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
